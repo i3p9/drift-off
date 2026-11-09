@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0c1012">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' file:; style-src 'self' file:; img-src 'self' file: data:; media-src 'self' file: blob:; connect-src 'none'; font-src 'none'; object-src 'none'; frame-src 'none'; base-uri 'none'; form-action 'none'; worker-src 'none'">
+  <meta name="description" content="Spoken scenes and quiet pauses. An independent sleep-scene player that works entirely offline.">
+  <title>Drift · bedtime scenes</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="scenes.js" defer></script>
+  <script src="engine.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="site-header">
+      <a class="wordmark" href="#" aria-label="Drift home" id="home-link">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M23.6 23.4A12 12 0 0 1 10.3 5.7a12 12 0 1 0 13.3 17.7Z"/></svg>
+        <span>drift<span class="wordmark-dot">.</span></span>
+      </a>
+      <div class="header-actions">
+        <button class="icon-button" id="settings-button" aria-label="Session settings" title="Session settings" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10m4 0h2M4 17h2m4 0h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <main class="main-content" id="main-content">
+      <div class="moon-scene" aria-hidden="true">
+        <div class="moon-halo"></div>
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="moon"></div>
+        <span class="star star-one"></span>
+        <span class="star star-two"></span>
+        <span class="star star-three"></span>
+      </div>
+
+      <section class="welcome" id="welcome" aria-labelledby="welcome-title">
+        <p class="eyebrow">A little space to unwind</p>
+        <h1 id="welcome-title">Let the day<br><em>drift away.</em></h1>
+        <p class="intro">Close your eyes and imagine each little scene.<br>Let it fade as the next one arrives.</p>
+        <button class="start-button" id="start-button" type="button">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7 4 9 6-9 6V4Z"/></svg>
+          <span id="start-label">Begin winding down</span>
+        </button>
+        <p class="session-summary" id="session-summary">7 minutes <span>·</span> 14-second pauses <span>·</span> Samantha</p>
+        <p class="completion-note" id="completion-note" hidden>Your session ended quietly. Take your time.</p>
+      </section>
+
+      <section class="session" id="session" aria-labelledby="session-title" hidden>
+        <p class="eyebrow" id="session-eyebrow">Your time to drift</p>
+        <h1 id="session-title">Nothing to do.<br><em>Nowhere to be.</em></h1>
+        <p class="session-guidance" id="session-guidance">Close your eyes. Let each scene come and go.</p>
+        <div class="timeline">
+          <progress id="session-progress" value="0" max="420" aria-label="Session progress"></progress>
+          <div class="timeline-labels"><span id="playback-state">Preparing your scenes…</span><span class="time" id="time-left">7:00</span></div>
+        </div>
+        <div class="playback-controls">
+          <button class="pause-button" id="pause-button" type="button" disabled>
+            <svg id="pause-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 4v12M14 4v12"/></svg>
+            <span id="pause-label">Pause</span>
+          </button>
+          <button class="text-button" id="end-button" type="button">End session</button>
+        </div>
+        <button class="darken-button" id="darken-button" type="button" hidden>
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M14.8 14.3a7 7 0 0 1-7.9-10A7 7 0 1 0 14.8 14.3Z"/></svg>
+          Darken screen
+        </button>
+      </section>
+      <p class="status-message" id="status-message" role="status" aria-live="polite" hidden></p>
+    </main>
+
+    <footer class="site-footer"><span class="quiet-dot" aria-hidden="true"></span><span>Just this moment. Nothing to keep track of.</span><button class="footer-about" id="privacy-button" aria-label="About Drift" type="button">About</button></footer>
+  </div>
+
+  <dialog id="settings-dialog" aria-labelledby="settings-title">
+    <div class="dialog-header"><div><p class="eyebrow">Make yourself comfortable</p><h2 id="settings-title">Your evening, your pace.</h2></div><button class="icon-button close-dialog" data-close="settings-dialog" aria-label="Close settings" type="button">×</button></div>
+    <div class="settings-row"><label for="duration-select">Session length<span>Ends gently, without a sound.</span></label><select id="duration-select"><option value="3">3 minutes</option><option value="5">5 minutes</option><option value="7" selected>7 minutes</option><option value="10">10 minutes</option><option value="15">15 minutes</option><option value="20">20 minutes</option><option value="30">30 minutes</option></select></div>
+    <div class="settings-row"><label for="gap-select">Space between scenes<span>A quiet moment to picture it.</span></label><select id="gap-select"><option value="8">8 seconds</option><option value="10">10 seconds</option><option value="12">12 seconds</option><option value="14" selected>14 seconds</option><option value="18">18 seconds</option><option value="22">22 seconds</option></select></div>
+    <div class="settings-row"><label for="voice-select">Voice<span>Choose what feels restful.</span></label><select id="voice-select" aria-label="Narration voice"></select></div>
+    <div class="settings-row"><label for="fade-toggle">Gradually soften the voice<span>A little quieter as you settle in.</span></label><label class="switch"><input id="fade-toggle" type="checkbox" checked aria-label="Gradually soften the voice"><span class="switch-track"></span></label></div>
+    <div class="settings-row volume-row"><label for="volume-slider">Starting volume<span>Keep your device volume comfortable.</span></label><div class="volume-control"><input id="volume-slider" type="range" min="0" max="100" step="1" value="65"><output id="volume-output" for="volume-slider">65%</output></div></div>
+    <p class="settings-note">Only these preferences are saved in this browser.</p>
+    <button class="dialog-done" data-close="settings-dialog" type="button">Sounds good</button>
+  </dialog>
+
+  <dialog id="privacy-dialog" aria-labelledby="privacy-title">
+    <div class="dialog-header"><div><p class="eyebrow">A private little ritual</p><h2 id="privacy-title">A quieter kind of app.</h2></div><button class="icon-button close-dialog" data-close="privacy-dialog" aria-label="Close privacy information" type="button">×</button></div>
+    <div class="privacy-copy"><p>The narration is AI-generated, prepared in advance, and included with the app. No voice service is contacted while you listen.</p><p>The player has no accounts, analytics, or session history. If you host it, your hosting provider can see ordinary page and file requests. You can also open the folder directly, completely offline.</p><p>Your session length, voice, pauses, and volume stay in this browser. You can reset those preferences below.</p></div>
+    <div class="privacy-detail"><span class="quiet-dot" aria-hidden="true"></span><span id="scene-count">180 original scenes. Two local voices.</span></div>
+    <button class="reset-button" id="reset-settings" type="button">Reset saved preferences</button>
+    <p class="reset-feedback" id="reset-feedback" role="status" hidden>Preferences reset.</p>
+  </dialog>
+
+  <button class="dark-screen" id="dark-screen" aria-label="Return to session controls" type="button" hidden><span class="dark-screen-dot"></span><span>Tap anywhere to return</span></button>
+  <audio id="session-audio" preload="none"></audio>
+  <noscript><p class="noscript-note">Drift needs JavaScript to assemble and play the local audio files. No connection is needed.</p></noscript>
+</body>
+</html>

@@ -1,0 +1,4082 @@
+{
+  "format_version": 1,
+  "model": "eleven_multilingual_v2",
+  "scene_file": "scenes.json",
+  "voice_settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true,
+    "speed": 0.85
+  },
+  "voices": [
+    {
+      "id": "serena",
+      "name": "Serena",
+      "voice_id": "pysCEvZRsl1S0ifPp4IM",
+      "selected": true,
+      "tempo_target": 1.25,
+      "source_speed": 0.85,
+      "source_cache_profile": "b53e8bf67528fadd",
+      "clips": [
+        {
+          "id": "scene-001",
+          "file": "serena/scene-001.mp3",
+          "sha256": "8f4bc8518244e680a5b34c06d6c6bc88a649b7408b70abafa9f639b591c814cf",
+          "source_cache_filename": "scene-001-f7d5143cb1e8ca00.mp3",
+          "receipt": {
+            "characters": 49,
+            "credits": 20,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-002",
+          "file": "serena/scene-002.mp3",
+          "sha256": "f1f686d79b8b74aaa7e3adb0640fc52b448036b1260b1b7f8553d7120737721f",
+          "source_cache_filename": "scene-002-8520305721451d7c.mp3",
+          "receipt": {
+            "characters": 52,
+            "credits": 21,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-003",
+          "file": "serena/scene-003.mp3",
+          "sha256": "9234c6b7474ba114aa8b2ff245d07ed55ee1e703cec4ed5606a35583a60d36e2",
+          "source_cache_filename": "scene-003-bb804aaeab73fa5d.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-004",
+          "file": "serena/scene-004.mp3",
+          "sha256": "2a82b7ef9375a6d8982c384928640b6ba63a92b06ecdd7acd85525b04a6d0fc4",
+          "source_cache_filename": "scene-004-0528e756c5984445.mp3",
+          "receipt": {
+            "characters": 47,
+            "credits": 19,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-005",
+          "file": "serena/scene-005.mp3",
+          "sha256": "cd72c9ffac82900fd2da3103a4234ee52f1cd8ac29a6251bb4b11d6516040257",
+          "source_cache_filename": "scene-005-356dd902ddedcec7.mp3",
+          "receipt": {
+            "characters": 37,
+            "credits": 15,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-006",
+          "file": "serena/scene-006.mp3",
+          "sha256": "31d33cdce59b8b1ce8cf28bd77596323d4d00f0884cb15d0245a531b2cbf529f",
+          "source_cache_filename": "scene-006-d57e64d79d8da73d.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-007",
+          "file": "serena/scene-007.mp3",
+          "sha256": "c70c374712d00c84610e217ed69f726e3019440cdf403bcb4ce90d50eb2fb94c",
+          "source_cache_filename": "scene-007-34e1e5f10b83a5d3.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-008",
+          "file": "serena/scene-008.mp3",
+          "sha256": "8a0a33fb5356bda8406aa887483c33f458324e9e38ed6e46f118f7dd07245a1f",
+          "source_cache_filename": "scene-008-b43de9ed6d0d3a83.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-009",
+          "file": "serena/scene-009.mp3",
+          "sha256": "eb48bc69594b65037f5643ad36f31419f81aca4c4f0bd8ed22a3178f44ab197a",
+          "source_cache_filename": "scene-009-684aa72aecee3766.mp3",
+          "receipt": {
+            "characters": 48,
+            "credits": 19,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-010",
+          "file": "serena/scene-010.mp3",
+          "sha256": "d7260977fb4981d0877f21db00288ce125cc4eb0bf6cb9b3dac3b00a49ceb0c7",
+          "source_cache_filename": "scene-010-7876d2bd0db9908f.mp3",
+          "receipt": {
+            "characters": 38,
+            "credits": 15,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-011",
+          "file": "serena/scene-011.mp3",
+          "sha256": "3140f595febee248a1a50222b42144a864cc831364d4844e36b4259e58f34ef6",
+          "source_cache_filename": "scene-011-b3972ae67b2d00f3.mp3",
+          "receipt": {
+            "characters": 47,
+            "credits": 19,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-012",
+          "file": "serena/scene-012.mp3",
+          "sha256": "083eef4ecd4dd298fc66e1e68e328fb2da7768dd72d448a897ab328f46faccc0",
+          "source_cache_filename": "scene-012-23977aecb46228d7.mp3",
+          "receipt": {
+            "characters": 35,
+            "credits": 14,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-013",
+          "file": "serena/scene-013.mp3",
+          "sha256": "7bb8ae1ee6a1c2db8b951701eaf8ab06ea22c7785834176faead228ffa25739b",
+          "source_cache_filename": "scene-013-79f0aae4059a4eb2.mp3",
+          "receipt": {
+            "characters": 46,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-014",
+          "file": "serena/scene-014.mp3",
+          "sha256": "eeac5c2c6cc7f55a36214c0c3269d4927f3be4fadde40ec3195a38f9e44d40b0",
+          "source_cache_filename": "scene-014-1a48cfad95bbcfe8.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-015",
+          "file": "serena/scene-015.mp3",
+          "sha256": "0db6a7902cadf34cb05c86e4cbc6357a4987e1eb333a86629483e78479f4b15f",
+          "source_cache_filename": "scene-015-26289a401f4ff9d6.mp3",
+          "receipt": {
+            "characters": 48,
+            "credits": 19,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-016",
+          "file": "serena/scene-016.mp3",
+          "sha256": "87e0120992dce75635bd0929192b07cb8e4cb7ab8853cc5fa8a86c97b5af20cf",
+          "source_cache_filename": "scene-016-3243aae9916b6c5c.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-017",
+          "file": "serena/scene-017.mp3",
+          "sha256": "7cbe78f6004bab3ea157f3f21dc67d1e022577da80e7606f4df83ad3d1c2d916",
+          "source_cache_filename": "scene-017-0258ac91b18e2098.mp3",
+          "receipt": {
+            "characters": 45,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-018",
+          "file": "serena/scene-018.mp3",
+          "sha256": "db764e6fec3adf20410ce2af305b9e8af0ef3182e39cd35fc609229c11ea77a1",
+          "source_cache_filename": "scene-018-5faa44d0471cb8d0.mp3",
+          "receipt": {
+            "characters": 39,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-019",
+          "file": "serena/scene-019.mp3",
+          "sha256": "ecacb2e7f68f6405c51a6de79a94a86764045d9d0ce31536b8de6be928705f63",
+          "source_cache_filename": "scene-019-6846f00cccc1f327.mp3",
+          "receipt": {
+            "characters": 38,
+            "credits": 15,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-020",
+          "file": "serena/scene-020.mp3",
+          "sha256": "68f0eafcfb5f99d2cfb4e2385a2118b162368cfd38dd7acc537a5f723cb3e088",
+          "source_cache_filename": "scene-020-a03bcf30ab44331b.mp3",
+          "receipt": {
+            "characters": 38,
+            "credits": 15,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-021",
+          "file": "serena/scene-021.mp3",
+          "sha256": "e51f81d4ec6b3d9f68632dfcb0544352bedc19333537e7b7333f51c6c185ca17",
+          "source_cache_filename": "scene-021-e296fa4e5e7ace6e.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-022",
+          "file": "serena/scene-022.mp3",
+          "sha256": "e0783d827ad37dfc82a7c3409fe05f91e5b15d0d95465e08177436e6078e8fe1",
+          "source_cache_filename": "scene-022-df2119e56f877fdb.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-023",
+          "file": "serena/scene-023.mp3",
+          "sha256": "0bf7f484f6934fa69e554c397323f53ca59a381d3f7c90dfc67f78978ed741c9",
+          "source_cache_filename": "scene-023-c9fc15826af4f049.mp3",
+          "receipt": {
+            "characters": 45,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-024",
+          "file": "serena/scene-024.mp3",
+          "sha256": "29a394173dda04ed0394eb5e786d366d334789dc99bbbb627c784ede1dc34e48",
+          "source_cache_filename": "scene-024-30d965160b699164.mp3",
+          "receipt": {
+            "characters": 40,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-025",
+          "file": "serena/scene-025.mp3",
+          "sha256": "2a3a25ac3329608d5225ab282aa8d240a94f600c7c77390bbd9d0a3ab3c9b097",
+          "source_cache_filename": "scene-025-862f64c60cedc337.mp3",
+          "receipt": {
+            "characters": 44,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-026",
+          "file": "serena/scene-026.mp3",
+          "sha256": "4fac86ed694b841d9b06974b0ca511824db85b7bb9d645f9b39d474aa70494e9",
+          "source_cache_filename": "scene-026-ffa487f0f3b2009d.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-027",
+          "file": "serena/scene-027.mp3",
+          "sha256": "4c66ec0e0b020f1402af1bfdff589a2a4783844c791b48e63f2887c546e8fbe3",
+          "source_cache_filename": "scene-027-d3eb721536e2a925.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-028",
+          "file": "serena/scene-028.mp3",
+          "sha256": "b05c62348ee5aac14c04a63d3a203aff89331766731053a84c05ec241e48b0af",
+          "source_cache_filename": "scene-028-2ea2d99710825779.mp3",
+          "receipt": {
+            "characters": 39,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-029",
+          "file": "serena/scene-029.mp3",
+          "sha256": "ededaf12cecab896b22e17ee7b2725bcf39292b0e64abde1edb19138d81035fb",
+          "source_cache_filename": "scene-029-fa3e460f11af45b8.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-030",
+          "file": "serena/scene-030.mp3",
+          "sha256": "0681628b72194ff4d0069cf6dfcdaac05d8aa7656bc963be73e9be902ca3b08e",
+          "source_cache_filename": "scene-030-120427b44a8653d6.mp3",
+          "receipt": {
+            "characters": 38,
+            "credits": 15,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-031",
+          "file": "serena/scene-031.mp3",
+          "sha256": "7942080c7be60d414c4aab5cf9a3eb7e72f35720df10405dc558fe2c64874e22",
+          "source_cache_filename": "scene-031-d3d2645f65fdccd1.mp3",
+          "receipt": {
+            "characters": 36,
+            "credits": 14,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-032",
+          "file": "serena/scene-032.mp3",
+          "sha256": "b31ac9bbed9e05b21be42a765e2771fd8792acfd1ab0094176fe57658869f1de",
+          "source_cache_filename": "scene-032-3a5d52fbc2e425d4.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-033",
+          "file": "serena/scene-033.mp3",
+          "sha256": "fab67bade11f87c4959d0938614e958240d7dac668aa39aeb07b9915c2434010",
+          "source_cache_filename": "scene-033-0c7d125c45005586.mp3",
+          "receipt": {
+            "characters": 48,
+            "credits": 19,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-034",
+          "file": "serena/scene-034.mp3",
+          "sha256": "95c7cd6562ded7bb69f4221c00103ef331a4f83b2a4a3b446f7c22eedf8ca6bf",
+          "source_cache_filename": "scene-034-294894e59471a125.mp3",
+          "receipt": {
+            "characters": 35,
+            "credits": 14,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-035",
+          "file": "serena/scene-035.mp3",
+          "sha256": "2f1b15e43273666e64ba8441e18f06cc0771620354d8f52695fe5561b698801d",
+          "source_cache_filename": "scene-035-274e320dc4838b91.mp3",
+          "receipt": {
+            "characters": 47,
+            "credits": 19,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-036",
+          "file": "serena/scene-036.mp3",
+          "sha256": "0add5b4e50c12f6cb46ad3da1c9004cdc9ef96cd0609feddfff20f78e03b44c5",
+          "source_cache_filename": "scene-036-197416c8422b0ebc.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-037",
+          "file": "serena/scene-037.mp3",
+          "sha256": "d58739738f06b4272d8625b4611f24890193e92f6fdc358e6ae93d86a5b42344",
+          "source_cache_filename": "scene-037-1de80da99f3b1765.mp3",
+          "receipt": {
+            "characters": 45,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-038",
+          "file": "serena/scene-038.mp3",
+          "sha256": "2928e81454e96685b696a2a4c3c787823a1d1548b15c7c18b607749a99058b4d",
+          "source_cache_filename": "scene-038-42ca503235adb078.mp3",
+          "receipt": {
+            "characters": 40,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-039",
+          "file": "serena/scene-039.mp3",
+          "sha256": "d90059c1250ce182192244888425099efac3b521253b5960c9cfed93bf6a1241",
+          "source_cache_filename": "scene-039-92ff77e270e73ebf.mp3",
+          "receipt": {
+            "characters": 44,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-040",
+          "file": "serena/scene-040.mp3",
+          "sha256": "93141302c1dec3672a4cf14139c89db1d71079bbac187d8d8c939b743acde878",
+          "source_cache_filename": "scene-040-0661bb84aa002bf1.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-041",
+          "file": "serena/scene-041.mp3",
+          "sha256": "49e9d00ae61b875261cc6ad63df430a35b3e0965cc5cc967de6d9b73128f2f09",
+          "source_cache_filename": "scene-041-726e6c5ebf20becb.mp3",
+          "receipt": {
+            "characters": 40,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-042",
+          "file": "serena/scene-042.mp3",
+          "sha256": "6e3e25c2af84fc5bb4bb508ff251816fac2af3579e90c58b83a62394de1bcf7a",
+          "source_cache_filename": "scene-042-c0479263c3ea406e.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-043",
+          "file": "serena/scene-043.mp3",
+          "sha256": "c1599e4a20c4f24b75eb44a2f069833b3560617d7a971ae40b9d8745ed0927b4",
+          "source_cache_filename": "scene-043-41785033c9592408.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-044",
+          "file": "serena/scene-044.mp3",
+          "sha256": "a9a6b16637c48c588c155f00c20e6be0c06019ba563268a3a32f2256d8cc2b02",
+          "source_cache_filename": "scene-044-1d1d55d0df5d8c61.mp3",
+          "receipt": {
+            "characters": 45,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-045",
+          "file": "serena/scene-045.mp3",
+          "sha256": "d17580a9e96d43cdb71dc5b6d43461e191390fd488ce2f5acadb60264298983a",
+          "source_cache_filename": "scene-045-60241b3f23a4f2e1.mp3",
+          "receipt": {
+            "characters": 37,
+            "credits": 15,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-046",
+          "file": "serena/scene-046.mp3",
+          "sha256": "3315ee76ab18dfc08bca3e5e13e5abb4359a554f27d5e4fe10b6ce5b6c222588",
+          "source_cache_filename": "scene-046-e0332f725ffc8344.mp3",
+          "receipt": {
+            "characters": 46,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-047",
+          "file": "serena/scene-047.mp3",
+          "sha256": "cefcb78d062ab95c719de932ae599307ef6d303b91ce935e51096d856de37953",
+          "source_cache_filename": "scene-047-3c24cb8fb1224ab8.mp3",
+          "receipt": {
+            "characters": 29,
+            "credits": 12,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-048",
+          "file": "serena/scene-048.mp3",
+          "sha256": "896487989d762742d8eeadb371b41f865bd546900eec132b4e242de8c48864b7",
+          "source_cache_filename": "scene-048-b3a7d565bb08b308.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-049",
+          "file": "serena/scene-049.mp3",
+          "sha256": "4f60d816c6f8bbe034636ddd2af8e9229120c4c410f76727b8478161d2f1f9d4",
+          "source_cache_filename": "scene-049-9057892b2b356a5a.mp3",
+          "receipt": {
+            "characters": 48,
+            "credits": 19,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-050",
+          "file": "serena/scene-050.mp3",
+          "sha256": "47ed636a8c5aab3d729903af18245e76b8866f354cd2e77a6ca646b9d97ee376",
+          "source_cache_filename": "scene-050-6a50929b3e8fe090.mp3",
+          "receipt": {
+            "characters": 44,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-051",
+          "file": "serena/scene-051.mp3",
+          "sha256": "91f3d76a6caff9015ab75a3123abc8f7ceefa91d9b43f0a15ca88a70de494e22",
+          "source_cache_filename": "scene-051-5d018049fd70cd32.mp3",
+          "receipt": {
+            "characters": 46,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-052",
+          "file": "serena/scene-052.mp3",
+          "sha256": "fd453122274066edf5c2446afc9f70e4a3f51d9dc0712ebaae5ad97219a4e88e",
+          "source_cache_filename": "scene-052-78a7b052a9a1ab63.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-053",
+          "file": "serena/scene-053.mp3",
+          "sha256": "6d3bcf0600b403d4066d899af58d5c38bebfd623b24586d3017541ce1edbe25b",
+          "source_cache_filename": "scene-053-789b34ede4c4b207.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-054",
+          "file": "serena/scene-054.mp3",
+          "sha256": "d81cdf0985a70d8ae8666f8f910a662a52a9e7aefc54af22989d50850382d6d7",
+          "source_cache_filename": "scene-054-922e2d9bbc46d7d4.mp3",
+          "receipt": {
+            "characters": 39,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-055",
+          "file": "serena/scene-055.mp3",
+          "sha256": "b458c8552daa018cd44ddc02e09a13dd10ca4de74e091dba5fd5a7cfa5a8d31a",
+          "source_cache_filename": "scene-055-fb5f25577b84d6a9.mp3",
+          "receipt": {
+            "characters": 46,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-056",
+          "file": "serena/scene-056.mp3",
+          "sha256": "ccb15513965915f3ca74ada6eb7331f172631a52af3354948f1df14746b1f22f",
+          "source_cache_filename": "scene-056-ad99db39a27caeec.mp3",
+          "receipt": {
+            "characters": 46,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-057",
+          "file": "serena/scene-057.mp3",
+          "sha256": "473b554b931361c33119dc3e2ff7d36caac38c2019d1fb7c50afae211f26ad80",
+          "source_cache_filename": "scene-057-647498fdca2bf071.mp3",
+          "receipt": {
+            "characters": 44,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-058",
+          "file": "serena/scene-058.mp3",
+          "sha256": "bfb044a112f1dc23d089d770bd9c61253c3b474aabbc996a79f1986e64d2e086",
+          "source_cache_filename": "scene-058-e05f393a50076a1d.mp3",
+          "receipt": {
+            "characters": 48,
+            "credits": 19,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-059",
+          "file": "serena/scene-059.mp3",
+          "sha256": "81221f0781f37ede96d4fde8e5c8bb8761a9787855c13a313032f93ec064b85e",
+          "source_cache_filename": "scene-059-27ff5f16e900a54f.mp3",
+          "receipt": {
+            "characters": 45,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-060",
+          "file": "serena/scene-060.mp3",
+          "sha256": "d8d3e8f465ac2d3b62272ecd41c1a049168bf027ec59d90b9edba29a0f968800",
+          "source_cache_filename": "scene-060-d60a150728726ca0.mp3",
+          "receipt": {
+            "characters": 40,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-061",
+          "file": "serena/scene-061.mp3",
+          "sha256": "5c96578c6cfe7cce2b5d47eff8ece7b5409622f5fe73a5e1e6534f2c410d579b",
+          "source_cache_filename": "scene-061-987636c42615135d.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-062",
+          "file": "serena/scene-062.mp3",
+          "sha256": "17e8a17c1f024afa7b0b0a5c9df694fa6528f2f9d499660cbe7e5a8a9245b9a0",
+          "source_cache_filename": "scene-062-6b304a2d0840f9a9.mp3",
+          "receipt": {
+            "characters": 40,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-063",
+          "file": "serena/scene-063.mp3",
+          "sha256": "3fae7b58c6f28d66ba97465fdb4f8c669ddf4f390fba33ff50c77634f1636d8e",
+          "source_cache_filename": "scene-063-f06a7557acca756f.mp3",
+          "receipt": {
+            "characters": 45,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-064",
+          "file": "serena/scene-064.mp3",
+          "sha256": "96e641bc9eb40a3c371e3d82b4644750750d0366024758addbe317738b018623",
+          "source_cache_filename": "scene-064-872d9aef0936a6cd.mp3",
+          "receipt": {
+            "characters": 45,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-065",
+          "file": "serena/scene-065.mp3",
+          "sha256": "2fcd740c1abf4b017421c7aea3129fc2dfabba687a5e62908c3a19a7663ca08d",
+          "source_cache_filename": "scene-065-1dfe23cf84dff55b.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-066",
+          "file": "serena/scene-066.mp3",
+          "sha256": "8298dbc66034cdb604e8dbf2d08284378fe3154adc5854f9fa683f97e72b78d2",
+          "source_cache_filename": "scene-066-0bfcd6a013844e95.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-067",
+          "file": "serena/scene-067.mp3",
+          "sha256": "e867e7c5a9802a594dca323b59d6cde0ab2ba95522d29e311e9b962759c8feeb",
+          "source_cache_filename": "scene-067-6a12b581a859eeb8.mp3",
+          "receipt": {
+            "characters": 44,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-068",
+          "file": "serena/scene-068.mp3",
+          "sha256": "91524b4c6b46f907cf3ebb5c4ce391bc35ce5dc02e41cf78a97ea544669d04df",
+          "source_cache_filename": "scene-068-e09528d5a690a728.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-069",
+          "file": "serena/scene-069.mp3",
+          "sha256": "e7f33e0c05f12391b39a2dd159400f70996a0479304b2c5980fa8f9394cdc742",
+          "source_cache_filename": "scene-069-7e6f51b0a8990ee7.mp3",
+          "receipt": {
+            "characters": 40,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-070",
+          "file": "serena/scene-070.mp3",
+          "sha256": "aa15bfb34d95507ec6f07731e9a8c661987110514b17730cf09e9574f4c9c146",
+          "source_cache_filename": "scene-070-98f286b8b5dd2900.mp3",
+          "receipt": {
+            "characters": 47,
+            "credits": 19,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-071",
+          "file": "serena/scene-071.mp3",
+          "sha256": "ae000472113608fa9b2c0e32efa977456d8fa130e11a4847cb45f8aef037ca08",
+          "source_cache_filename": "scene-071-7c6e5e15683112c7.mp3",
+          "receipt": {
+            "characters": 45,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-072",
+          "file": "serena/scene-072.mp3",
+          "sha256": "1fd9016b29dc472ccdb2d1425bd05ab6a399e296c4796e3d932d490510edc9bb",
+          "source_cache_filename": "scene-072-c15acb5d72240fbb.mp3",
+          "receipt": {
+            "characters": 34,
+            "credits": 14,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-073",
+          "file": "serena/scene-073.mp3",
+          "sha256": "b6b295fe9c67c01d134d25c2a6a63ebb27d1cfe2e15cfeea9b0875c61950caf9",
+          "source_cache_filename": "scene-073-9d0e112ea9c88e2e.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-074",
+          "file": "serena/scene-074.mp3",
+          "sha256": "a101a90533a4ce2af68ff34e95d85f7f497df99c1f6f89dc9a940811e203835b",
+          "source_cache_filename": "scene-074-fc42a3863bb47ade.mp3",
+          "receipt": {
+            "characters": 45,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-075",
+          "file": "serena/scene-075.mp3",
+          "sha256": "02b77b7a1c0092079a55da77b7cef7b61dc2fbbb3ebb0db545219005f1013404",
+          "source_cache_filename": "scene-075-4b7a08849975f1cf.mp3",
+          "receipt": {
+            "characters": 37,
+            "credits": 15,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-076",
+          "file": "serena/scene-076.mp3",
+          "sha256": "20e3b59f4c8e0163987b8592cc212120e9d16ce29ff87a8d3f6b9c16107b9e1f",
+          "source_cache_filename": "scene-076-e5bf26d635786d61.mp3",
+          "receipt": {
+            "characters": 39,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-077",
+          "file": "serena/scene-077.mp3",
+          "sha256": "5bb5d45d3df2e5e29000ee39312139263f16c58b999e52cfd250864de9ebbb65",
+          "source_cache_filename": "scene-077-70203213af4e6c99.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-078",
+          "file": "serena/scene-078.mp3",
+          "sha256": "ed49df456d9240c2ada7aa2b87a61b2984d42210b18681e58e8eb5fcdae6c770",
+          "source_cache_filename": "scene-078-b7dc516d27d9de6e.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-079",
+          "file": "serena/scene-079.mp3",
+          "sha256": "0a48c80e5e5ede9097b6b72718de56f9b6c2d2a8e348913912520d36a17ecfcc",
+          "source_cache_filename": "scene-079-ef13a62b1cee646e.mp3",
+          "receipt": {
+            "characters": 40,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-080",
+          "file": "serena/scene-080.mp3",
+          "sha256": "e9e4d8d3d770f326c7fa25bc41f0aed889dc28d99d1657f3050e8e6cf131b116",
+          "source_cache_filename": "scene-080-ac9eb7bba3e37119.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-081",
+          "file": "serena/scene-081.mp3",
+          "sha256": "65dc0c4737dd8ffa0163b7980932e44229eb87b8dec531a18167024521b2c566",
+          "source_cache_filename": "scene-081-e629348584be9110.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-082",
+          "file": "serena/scene-082.mp3",
+          "sha256": "5b50e349464983ba4712c00b49b8bac42b32aadbebb712fbfeeca8439dc2aeb8",
+          "source_cache_filename": "scene-082-df0f8952697bedbc.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-083",
+          "file": "serena/scene-083.mp3",
+          "sha256": "081f9e415163507539dcd36b1126994691d772342584d611428ae1be21c0d1fc",
+          "source_cache_filename": "scene-083-1e13258dcf3cc32c.mp3",
+          "receipt": {
+            "characters": 45,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-084",
+          "file": "serena/scene-084.mp3",
+          "sha256": "bb6887c1016b27f45fc82843291f0bd77bf2411a9df7a49195e26c259388388e",
+          "source_cache_filename": "scene-084-6c824a08895c2139.mp3",
+          "receipt": {
+            "characters": 47,
+            "credits": 19,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-085",
+          "file": "serena/scene-085.mp3",
+          "sha256": "60312b3288d6d2107ecc2fe6ec53cf0335576ed087658a42a8481d88b6251a45",
+          "source_cache_filename": "scene-085-1c2da9a4cb165dbb.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-086",
+          "file": "serena/scene-086.mp3",
+          "sha256": "1531f1cd7634d0c6d33e4f99f9a667ea1ec9edc2a18dc48d0f6e03377ef3b332",
+          "source_cache_filename": "scene-086-847f01aee6b9b837.mp3",
+          "receipt": {
+            "characters": 45,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-087",
+          "file": "serena/scene-087.mp3",
+          "sha256": "1c333c47a6f4d0727902a9834a5b0dfe0b8547162a3c0da5837050df83dd5054",
+          "source_cache_filename": "scene-087-029c772269b675c8.mp3",
+          "receipt": {
+            "characters": 45,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-088",
+          "file": "serena/scene-088.mp3",
+          "sha256": "e8a755685c710649f79f1ca206bac3b6c60be12aa6464d761fd04b4aaa513899",
+          "source_cache_filename": "scene-088-3fdb8e599c2cb954.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-089",
+          "file": "serena/scene-089.mp3",
+          "sha256": "a739abc9b95777948a2b4997f98276cb66a38621f0c4ba065d5494e7bfacc708",
+          "source_cache_filename": "scene-089-2455a476dcfa89b8.mp3",
+          "receipt": {
+            "characters": 44,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-090",
+          "file": "serena/scene-090.mp3",
+          "sha256": "66c608c66040afb8ebb6113c4b36357333150dfe882fea2eb1efa4e3cd384669",
+          "source_cache_filename": "scene-090-1d58d80f23fa5a4c.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-091",
+          "file": "serena/scene-091.mp3",
+          "sha256": "051a9ea70de4396a6978d60d6fa58cca7b198d40aa74083541c23fd24783b422",
+          "source_cache_filename": "scene-091-523cf22d7bf7c484.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-092",
+          "file": "serena/scene-092.mp3",
+          "sha256": "510fe52c2d7f70ce9d8a7ebab847eb171eb7ba6fb46b4c7483c1a8ca07782aad",
+          "source_cache_filename": "scene-092-7583e7276899776a.mp3",
+          "receipt": {
+            "characters": 40,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-093",
+          "file": "serena/scene-093.mp3",
+          "sha256": "2e7b0d368999e31990f5dbdc0ad93770c8f2725153887d35fb9984f1823c2e1a",
+          "source_cache_filename": "scene-093-806c3d5658369ba6.mp3",
+          "receipt": {
+            "characters": 40,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-094",
+          "file": "serena/scene-094.mp3",
+          "sha256": "b5a06a373a28d7538281e031573c979dcc5ce298cc664054a0b49009f7e564a1",
+          "source_cache_filename": "scene-094-6b7a1fe0b3814cb3.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-095",
+          "file": "serena/scene-095.mp3",
+          "sha256": "07ec361bab5d5726f8a450ef7f2a4f92978ddf87049a40ed3e31a8736a43145c",
+          "source_cache_filename": "scene-095-1132b3ffc62ce0e9.mp3",
+          "receipt": {
+            "characters": 40,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-096",
+          "file": "serena/scene-096.mp3",
+          "sha256": "e0c0828570a9aea86d9f024a49dd10a69665d77530956cef99066ab96dbc8d49",
+          "source_cache_filename": "scene-096-12c42f3cbec5e565.mp3",
+          "receipt": {
+            "characters": 40,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-097",
+          "file": "serena/scene-097.mp3",
+          "sha256": "4e70707a9f35ecea77bc60a89925cbc9c69b86464bf16ecd62405bd1887220a5",
+          "source_cache_filename": "scene-097-f763a397552d387a.mp3",
+          "receipt": {
+            "characters": 40,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-098",
+          "file": "serena/scene-098.mp3",
+          "sha256": "ec3538031fe26debd03804a72b5b1d4e659d2666adb9b1e10d46d19fd4849ba0",
+          "source_cache_filename": "scene-098-6381e725d550e405.mp3",
+          "receipt": {
+            "characters": 38,
+            "credits": 15,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-099",
+          "file": "serena/scene-099.mp3",
+          "sha256": "9d7ef98cc9312e4d066e66243e22ddfdcb3de8f066eb42eb7225f1210f3b2c86",
+          "source_cache_filename": "scene-099-b34bdc9a66df9cd5.mp3",
+          "receipt": {
+            "characters": 44,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-100",
+          "file": "serena/scene-100.mp3",
+          "sha256": "6313d44e89cab5ce82f7c5e7893b8f23eb8305ce0ce0d8456a920dd9b24356b6",
+          "source_cache_filename": "scene-100-6dce691cdeace38b.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-101",
+          "file": "serena/scene-101.mp3",
+          "sha256": "67939ff0f0eed32d20459f9349a5ccf0eee3435a99f8abf2f6d9620b5d3b6d10",
+          "source_cache_filename": "scene-101-4dc989791719fcda.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-102",
+          "file": "serena/scene-102.mp3",
+          "sha256": "e68ddba4ce19d02ee81d3c57436cb0e2adb00946084d16db89fc6e2546a51598",
+          "source_cache_filename": "scene-102-eb7912dcc6b1a102.mp3",
+          "receipt": {
+            "characters": 46,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-103",
+          "file": "serena/scene-103.mp3",
+          "sha256": "39728b56c166cc012dee53755203326d8ff645e26c4be8c33820f2a2fccc0d38",
+          "source_cache_filename": "scene-103-a8b07f9645fcbca0.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-104",
+          "file": "serena/scene-104.mp3",
+          "sha256": "c159ec557d0150824ee3853a063831bf65aa24b28e6c4a4c9baa8e18a0376317",
+          "source_cache_filename": "scene-104-f6d437ed02c37681.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-105",
+          "file": "serena/scene-105.mp3",
+          "sha256": "8bc52b47b1face9943b92794117bb131776db24a25b7e94661e3418317b0ddd9",
+          "source_cache_filename": "scene-105-2c4a459481548dcc.mp3",
+          "receipt": {
+            "characters": 44,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-106",
+          "file": "serena/scene-106.mp3",
+          "sha256": "0f6963ca590a1de3ec9dd931fbc15d0196c53ea036f23e92bd3b27d008b3f8fe",
+          "source_cache_filename": "scene-106-598b7e54b0f33770.mp3",
+          "receipt": {
+            "characters": 40,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-107",
+          "file": "serena/scene-107.mp3",
+          "sha256": "b43e0a81a7f308038da2dea2a08d5e26dda38f3c402f3db097ffd731039a8dfe",
+          "source_cache_filename": "scene-107-245159fd21cf15e2.mp3",
+          "receipt": {
+            "characters": 44,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-108",
+          "file": "serena/scene-108.mp3",
+          "sha256": "045c3bb0686a5e68aefbc06c1353db9db79f2349582711e056148d8e3fafd78d",
+          "source_cache_filename": "scene-108-f92c1d7e3f05441c.mp3",
+          "receipt": {
+            "characters": 39,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-109",
+          "file": "serena/scene-109.mp3",
+          "sha256": "f180d79dceb0664c862ea5c53eb8ee79514a85b8f9a2c2df973c35373e81d6c7",
+          "source_cache_filename": "scene-109-e64c04e8d4ccbdc1.mp3",
+          "receipt": {
+            "characters": 44,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-110",
+          "file": "serena/scene-110.mp3",
+          "sha256": "df433388d6aaf79a431b6afaaf8fe90eeb3c89e2e6368500b8facb6d2f19178b",
+          "source_cache_filename": "scene-110-fb39cdd72d480d12.mp3",
+          "receipt": {
+            "characters": 40,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-111",
+          "file": "serena/scene-111.mp3",
+          "sha256": "de8c525a8c80eab256736ef604fbdfed5e131df055dcd7f0f31a0caef76fb3dc",
+          "source_cache_filename": "scene-111-8066815d18b99d91.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-112",
+          "file": "serena/scene-112.mp3",
+          "sha256": "959bb765c2176f607d0a795b46ef4ba21099e5a816b58bcd55d327ac69c8dab2",
+          "source_cache_filename": "scene-112-be1abcbfea5c97d9.mp3",
+          "receipt": {
+            "characters": 39,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-113",
+          "file": "serena/scene-113.mp3",
+          "sha256": "003f7b9b70ac9761a24702ce1db55c38047db35ea5df9bcea37c1d54a9975c4d",
+          "source_cache_filename": "scene-113-32a7ef02308c968c.mp3",
+          "receipt": {
+            "characters": 44,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-114",
+          "file": "serena/scene-114.mp3",
+          "sha256": "a285b3c62a4fec4fd54c696cf9c0e8ecbb1b5b71dbca68903a5cca66b2077d5c",
+          "source_cache_filename": "scene-114-1b47100ef0a7edb3.mp3",
+          "receipt": {
+            "characters": 36,
+            "credits": 14,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-115",
+          "file": "serena/scene-115.mp3",
+          "sha256": "976924b3c460a09c01d3d7f6495af71a78ffc6feb053a0ad214882b4000b6c09",
+          "source_cache_filename": "scene-115-3a2b8c6378451762.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-116",
+          "file": "serena/scene-116.mp3",
+          "sha256": "a55858b2cc760b01352e921580796a753f759499a0d3b9de6dd60008d7ed7da3",
+          "source_cache_filename": "scene-116-3ce8f26cd6e40bb4.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-117",
+          "file": "serena/scene-117.mp3",
+          "sha256": "3de08217224010c22c436e03e879aec07b4794256ecb490a3a694eb77c9b4c6f",
+          "source_cache_filename": "scene-117-59a261b932f8acfd.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-118",
+          "file": "serena/scene-118.mp3",
+          "sha256": "c01d95b01becb1cffa23c5d01923aceddb9b160b72b74b0e3ef17e8b2fe4a238",
+          "source_cache_filename": "scene-118-fc1dbc2372f06b5b.mp3",
+          "receipt": {
+            "characters": 44,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-119",
+          "file": "serena/scene-119.mp3",
+          "sha256": "eeb8c3754ffa9cd52b886850913a21c772818a5cfe3986b8b8d8ac7258d99993",
+          "source_cache_filename": "scene-119-16d33271c8892d69.mp3",
+          "receipt": {
+            "characters": 37,
+            "credits": 15,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-120",
+          "file": "serena/scene-120.mp3",
+          "sha256": "1d7bc079691c4761ed63c2ccb1acbbdab91c5fc73d8c13461d47c0583e3da552",
+          "source_cache_filename": "scene-120-501ccbef01758738.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-121",
+          "file": "serena/scene-121.mp3",
+          "sha256": "65b697ab012cafa4a3dd7b6772534449ece00faa4e30f66cdae1dabf16df7294",
+          "source_cache_filename": "scene-121-f5c220b49e7ab4b0.mp3",
+          "receipt": {
+            "characters": 45,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-122",
+          "file": "serena/scene-122.mp3",
+          "sha256": "f0624277c637c7208c93bab263892a1ea53bb9f1da4696cfd8f5358a7fd2ec1e",
+          "source_cache_filename": "scene-122-8ae7b0b1380d5637.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-123",
+          "file": "serena/scene-123.mp3",
+          "sha256": "0bfa361565a0d8ae97cc772ce4266cceb96efd490d69bb1e3aa7fb5262d20588",
+          "source_cache_filename": "scene-123-c6b1ee54d7cd6237.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-124",
+          "file": "serena/scene-124.mp3",
+          "sha256": "1cac90bcbeb44fa170da08f78793187b3858f3f86793a54edfe898d2b8177ee9",
+          "source_cache_filename": "scene-124-864bef0dc1d04fe7.mp3",
+          "receipt": {
+            "characters": 37,
+            "credits": 15,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-125",
+          "file": "serena/scene-125.mp3",
+          "sha256": "57f8e991837044ec44adb51c8db64e1e198d34c33da92410798de4a5325330f6",
+          "source_cache_filename": "scene-125-7ef0e91a82230128.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-126",
+          "file": "serena/scene-126.mp3",
+          "sha256": "14ac19b17495a049b4f2e838808e926036a6b368a76079d5b4005725e3a66196",
+          "source_cache_filename": "scene-126-0b0a1cc2e6e29f48.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-127",
+          "file": "serena/scene-127.mp3",
+          "sha256": "26c46f33b0e06f5c20a8ffce9bd07454adef6b565444b0503f07340c3a106af4",
+          "source_cache_filename": "scene-127-860f87693afada2f.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-128",
+          "file": "serena/scene-128.mp3",
+          "sha256": "5a5e0323f6d5b6aca6fe9125d8e532e815c1e6c9ea3ba0c0b717f96dd5b68091",
+          "source_cache_filename": "scene-128-3e5649fda59ced60.mp3",
+          "receipt": {
+            "characters": 37,
+            "credits": 15,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-129",
+          "file": "serena/scene-129.mp3",
+          "sha256": "d96dc502a1537c5e45b0de03f7e1592a3248d6c0aa84086bbb511e3ef4a8964e",
+          "source_cache_filename": "scene-129-00368f2bba7a6ccb.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-130",
+          "file": "serena/scene-130.mp3",
+          "sha256": "64cb506aafec6c5578e01685d4cf62cbc092fd4221699c42ac571a78898678bc",
+          "source_cache_filename": "scene-130-bfee4ae71aa90585.mp3",
+          "receipt": {
+            "characters": 35,
+            "credits": 14,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-131",
+          "file": "serena/scene-131.mp3",
+          "sha256": "20f08818b89d4c0e8d8094c4fe38bc2a313de231e6cb0b5c4f17882046b4888d",
+          "source_cache_filename": "scene-131-0fd8f42a969d2e32.mp3",
+          "receipt": {
+            "characters": 46,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-132",
+          "file": "serena/scene-132.mp3",
+          "sha256": "698039d52e6a172bc8fe4ac5e24ea3c452d78aa5c6ab62e4284236ec4f7daf72",
+          "source_cache_filename": "scene-132-a0d40b64aab24c05.mp3",
+          "receipt": {
+            "characters": 40,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-133",
+          "file": "serena/scene-133.mp3",
+          "sha256": "6b8fc75d9e387e5f861c275b526f52706788630cc160c358f59fbb7bac8e2852",
+          "source_cache_filename": "scene-133-701005173801b09a.mp3",
+          "receipt": {
+            "characters": 39,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-134",
+          "file": "serena/scene-134.mp3",
+          "sha256": "e3a47dc96b561359394f47dcf01ef68d1816f461e306e0e120c5593d706426f6",
+          "source_cache_filename": "scene-134-475e9532e54e271b.mp3",
+          "receipt": {
+            "characters": 37,
+            "credits": 15,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-135",
+          "file": "serena/scene-135.mp3",
+          "sha256": "62185f1a953b649b80a95ea2612ebbc5c89819079fdd4c30f08726db6282f1fc",
+          "source_cache_filename": "scene-135-38de840fbd6d9d76.mp3",
+          "receipt": {
+            "characters": 38,
+            "credits": 15,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-136",
+          "file": "serena/scene-136.mp3",
+          "sha256": "b42d9792928b4ac95b09552784b73ab57ee8464df7acf782c49a91475778ee3f",
+          "source_cache_filename": "scene-136-728e3fd4e1822949.mp3",
+          "receipt": {
+            "characters": 46,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-137",
+          "file": "serena/scene-137.mp3",
+          "sha256": "808e7065943ad5fc8c42b90ab6a3254b3beab000dc581f5fac8045d113aa6c53",
+          "source_cache_filename": "scene-137-666df97d05e32b8d.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-138",
+          "file": "serena/scene-138.mp3",
+          "sha256": "b4c93217d041b9ae4e2cd27586837d70d77e994d3ea80008773a2b22b4fcab9c",
+          "source_cache_filename": "scene-138-7164d28517f7b596.mp3",
+          "receipt": {
+            "characters": 47,
+            "credits": 19,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-139",
+          "file": "serena/scene-139.mp3",
+          "sha256": "ac2762f2cfd5ec55c68314e7c8e80badde02b59e9c34891657c6908ae3942501",
+          "source_cache_filename": "scene-139-6a43f59ab8552cf4.mp3",
+          "receipt": {
+            "characters": 45,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-140",
+          "file": "serena/scene-140.mp3",
+          "sha256": "41148680992ee1fd4946495e308e09355d6eafbb5a5b789e74b3cd34a5d6a88f",
+          "source_cache_filename": "scene-140-eac47764021c8f5c.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-141",
+          "file": "serena/scene-141.mp3",
+          "sha256": "d67622e86cd125e871b04ccbadf6b0cdafbdffdf0312e18694c57100d715da79",
+          "source_cache_filename": "scene-141-7c295578f1c39bf7.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-142",
+          "file": "serena/scene-142.mp3",
+          "sha256": "516ee73f7f73e1a455a444de4557b80900a1d4f03df55a94374d7a1e938d17f2",
+          "source_cache_filename": "scene-142-75ec51da46985e2c.mp3",
+          "receipt": {
+            "characters": 37,
+            "credits": 15,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-143",
+          "file": "serena/scene-143.mp3",
+          "sha256": "ed81ca4cb388477ac9b8b1558857a64e36bb7a672b545e7a9ebe2a6814bb42e7",
+          "source_cache_filename": "scene-143-92eb71c49429bd17.mp3",
+          "receipt": {
+            "characters": 40,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-144",
+          "file": "serena/scene-144.mp3",
+          "sha256": "7f55f950bd20a354838875541995fc4f4105025d06f0852711988d523cfb52f6",
+          "source_cache_filename": "scene-144-5b295b77ad453485.mp3",
+          "receipt": {
+            "characters": 46,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-145",
+          "file": "serena/scene-145.mp3",
+          "sha256": "ab4777a9943791c1b8c573ab9c6568c340a0a4c252804aea6b8fc0c86117c6cb",
+          "source_cache_filename": "scene-145-3cbcef936aff414b.mp3",
+          "receipt": {
+            "characters": 48,
+            "credits": 19,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-146",
+          "file": "serena/scene-146.mp3",
+          "sha256": "10522417c1ab4042d443f05ac1832184ae6e469d4ba8ab101600b67726fc15b4",
+          "source_cache_filename": "scene-146-3f5c06436742e0d9.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-147",
+          "file": "serena/scene-147.mp3",
+          "sha256": "8bde62f57316fbd73354ce752343966c6dd1bb7a7b4ba56647bcc2a20e0cc13d",
+          "source_cache_filename": "scene-147-e810b8fd4a35af05.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-148",
+          "file": "serena/scene-148.mp3",
+          "sha256": "95175c8073f517bb4a73f739c52847f88a484eebc3ab91f61e1d612930eb4d75",
+          "source_cache_filename": "scene-148-97270711c298132a.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-149",
+          "file": "serena/scene-149.mp3",
+          "sha256": "739e7b1d807db3e49f3e57ab98544e90a979f97db2db01ac15d96a5cf952c887",
+          "source_cache_filename": "scene-149-403bb04d6ff33ff9.mp3",
+          "receipt": {
+            "characters": 45,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-150",
+          "file": "serena/scene-150.mp3",
+          "sha256": "13b74fed1504cacc2efcb6f11feb9c64409573f17f1ea507403d8727e3af2b16",
+          "source_cache_filename": "scene-150-d6455e494c1b2443.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-151",
+          "file": "serena/scene-151.mp3",
+          "sha256": "1b16e7688492d480d1d22fae56facb367bf9b931aaef5093430bfad4fe32f0e5",
+          "source_cache_filename": "scene-151-8e4e4bdc802c2398.mp3",
+          "receipt": {
+            "characters": 36,
+            "credits": 14,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-152",
+          "file": "serena/scene-152.mp3",
+          "sha256": "9c10e741d398083a3f6cd90053101e5f2773cc0de2087ac1f4e4a28d9f138c85",
+          "source_cache_filename": "scene-152-479b00a25669e650.mp3",
+          "receipt": {
+            "characters": 46,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-153",
+          "file": "serena/scene-153.mp3",
+          "sha256": "2ee4ec502b45c79e103e1e2637c70c91696204c60b37c0e9717265fec62d13df",
+          "source_cache_filename": "scene-153-c95923f7f572742e.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-154",
+          "file": "serena/scene-154.mp3",
+          "sha256": "b7ec2de689449783216b198e7434ecafc6eafc8ce4afa0700d2dc4e1b1295b46",
+          "source_cache_filename": "scene-154-9a28201aad778cf5.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-155",
+          "file": "serena/scene-155.mp3",
+          "sha256": "e8625c9290145a22c77b8b3d4947622b6e94d8b53aa057f6d5c8b649afc7c3ee",
+          "source_cache_filename": "scene-155-9ea631242f9bbf5e.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-156",
+          "file": "serena/scene-156.mp3",
+          "sha256": "b52489a7ea4140c0d345625827b3d43ab56e1d66a1191d6a893d35a0a764cfda",
+          "source_cache_filename": "scene-156-dc1219b556c06c35.mp3",
+          "receipt": {
+            "characters": 44,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-157",
+          "file": "serena/scene-157.mp3",
+          "sha256": "160d815a107dacf0cacdba5f40a2d77a26d48b070b6a1008d1af6b8b2cda07d7",
+          "source_cache_filename": "scene-157-bdc92b8170e1af31.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-158",
+          "file": "serena/scene-158.mp3",
+          "sha256": "20b20295ce12b380038f6fe7a5a4d306f57fb8e432f556acbcb64a2d89cf70e3",
+          "source_cache_filename": "scene-158-ad172944bca0ec73.mp3",
+          "receipt": {
+            "characters": 40,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-159",
+          "file": "serena/scene-159.mp3",
+          "sha256": "1ff2df6990b91682f8e1220f654fc71240a290370df20c50c1a708ce07414dbc",
+          "source_cache_filename": "scene-159-f8feb8a6e42a1996.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-160",
+          "file": "serena/scene-160.mp3",
+          "sha256": "b6416670b4ad230c1fab8990005f0c8b28b72301a71a8d665a40a54a8679ecf0",
+          "source_cache_filename": "scene-160-790f815d348fe6ed.mp3",
+          "receipt": {
+            "characters": 44,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-161",
+          "file": "serena/scene-161.mp3",
+          "sha256": "a67aeb68895bc9e6ab36703c0f1750922c5dd9e91223a8368b0f8b1de4800aad",
+          "source_cache_filename": "scene-161-304bf66e4830ebbe.mp3",
+          "receipt": {
+            "characters": 48,
+            "credits": 19,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-162",
+          "file": "serena/scene-162.mp3",
+          "sha256": "cd11ce7af75ea3efcda054959e7f1792dabfbe06b4be13f5ec211807b4c4b334",
+          "source_cache_filename": "scene-162-e7e0c4b2d8bdf837.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-163",
+          "file": "serena/scene-163.mp3",
+          "sha256": "a688d1694ec440664dfef7b7a148f17972078d6349134740e158d651542ff704",
+          "source_cache_filename": "scene-163-be41a55861b77189.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-164",
+          "file": "serena/scene-164.mp3",
+          "sha256": "e9e8f214c8f53e6673c9cbac38b11edade790a16de1e0f3f0fd08c4a68ce7fe5",
+          "source_cache_filename": "scene-164-d7151c070f9f1a79.mp3",
+          "receipt": {
+            "characters": 44,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-165",
+          "file": "serena/scene-165.mp3",
+          "sha256": "c7eaa1ecd23a6710d12677aee87e589a3d8e2580a05cafb53a85c025665aa522",
+          "source_cache_filename": "scene-165-a5dad152a69ce417.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-166",
+          "file": "serena/scene-166.mp3",
+          "sha256": "fd9b80d8908c2d41f4cfae24da53e671a39df64b65b757e5013c51efc4d29e3e",
+          "source_cache_filename": "scene-166-760ee173c0737b9b.mp3",
+          "receipt": {
+            "characters": 46,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-167",
+          "file": "serena/scene-167.mp3",
+          "sha256": "5f9048764c1175d37f1306047b540a0e1166101ef9b4d0ac97832101b17a6d49",
+          "source_cache_filename": "scene-167-410a8635c33d92fa.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-168",
+          "file": "serena/scene-168.mp3",
+          "sha256": "90f7e06526cdad5d511f30998d542a27ea9c79a2a1ec55621cef1f7f139631eb",
+          "source_cache_filename": "scene-168-074fa05308a89c7a.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-169",
+          "file": "serena/scene-169.mp3",
+          "sha256": "2f3949c3a768ecccf5ce0c3a43c7e88c7f699237b22fb2eb5e72aed6b8712965",
+          "source_cache_filename": "scene-169-34ce74dbb6d54f2c.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-170",
+          "file": "serena/scene-170.mp3",
+          "sha256": "bf9819e4875d6217db403a4fda7d11e588c021ce53438286073cc48cd392b417",
+          "source_cache_filename": "scene-170-5489624c9143bd73.mp3",
+          "receipt": {
+            "characters": 45,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-171",
+          "file": "serena/scene-171.mp3",
+          "sha256": "4cd57fae2ce523d471aaa86da3157ef2dbac4c962375a46c6175d9ad445079ba",
+          "source_cache_filename": "scene-171-2fa742a63651268f.mp3",
+          "receipt": {
+            "characters": 40,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-172",
+          "file": "serena/scene-172.mp3",
+          "sha256": "91f693aadebfb0af8f0ffccb01dec8423fa4cf43a07ac7058c95392063cfdd09",
+          "source_cache_filename": "scene-172-b0ecc18611ffc2b9.mp3",
+          "receipt": {
+            "characters": 44,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-173",
+          "file": "serena/scene-173.mp3",
+          "sha256": "b73322c26eb1ccf7534d8cf15679961886460dc4de257f5ed3e60bf95c75a2cd",
+          "source_cache_filename": "scene-173-6648e6369c4b5611.mp3",
+          "receipt": {
+            "characters": 47,
+            "credits": 19,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-174",
+          "file": "serena/scene-174.mp3",
+          "sha256": "d0e28eb6325141a5493e3bf0132bdf84429f2cf36059565f92280778aab3695e",
+          "source_cache_filename": "scene-174-84c7d32abab3d06c.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-175",
+          "file": "serena/scene-175.mp3",
+          "sha256": "1332a89629430cddefc08a1d66c98159c29e05ee7bbdbcd949e80d5a5cfa5a5e",
+          "source_cache_filename": "scene-175-c71f33539e310274.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-176",
+          "file": "serena/scene-176.mp3",
+          "sha256": "5dfc40ee343ecb950eec1cb0ab938ba1b6073fdc86c3b293a0a344df2fe3e89e",
+          "source_cache_filename": "scene-176-0629ba17aa382382.mp3",
+          "receipt": {
+            "characters": 39,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-177",
+          "file": "serena/scene-177.mp3",
+          "sha256": "6d0762e6fc8a92741d8422b12e1be2367b11eb49dc6ab9c3492f20e93c5db748",
+          "source_cache_filename": "scene-177-027f865ab335784b.mp3",
+          "receipt": {
+            "characters": 44,
+            "credits": 18,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-178",
+          "file": "serena/scene-178.mp3",
+          "sha256": "7e3d4e9f6e5f6d3fcaaf9f16faf43ff3321439f177e5900d3aded2e85d2686ce",
+          "source_cache_filename": "scene-178-b16c9019e40d87b2.mp3",
+          "receipt": {
+            "characters": 35,
+            "credits": 14,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-179",
+          "file": "serena/scene-179.mp3",
+          "sha256": "fad5084d787b6cca2ce9d0a1e5b57f9ed601d10957c2f60d45deb482278177e3",
+          "source_cache_filename": "scene-179-e100375c336797e9.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        },
+        {
+          "id": "scene-180",
+          "file": "serena/scene-180.mp3",
+          "sha256": "b1bdd8d9fda730786c1890936f10af1aa99c41410f3518203b7012aad5a3b499",
+          "source_cache_filename": "scene-180-b6deefa1915553f3.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Serene Presence -  Calm & Grounded"
+          }
+        }
+      ]
+    },
+    {
+      "id": "male-narrator",
+      "name": "Daniel",
+      "voice_id": "313oQQTtslwq8E1NQlxm",
+      "selected": true,
+      "tempo_target": 0.85,
+      "source_speed": 0.85,
+      "source_cache_profile": "bbedda1b5a936d15",
+      "clips": [
+        {
+          "id": "scene-001",
+          "file": "daniel/scene-001.mp3",
+          "sha256": "df964f0e16a2c26c2b7f94f97620b484e2bd5952840c2fd5c16173905352044b",
+          "source_cache_filename": "scene-001-f7d5143cb1e8ca00.mp3",
+          "receipt": {
+            "characters": 49,
+            "credits": 20,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-002",
+          "file": "daniel/scene-002.mp3",
+          "sha256": "414c438313b095c897c7d102853b8b11c9f6d5abb602a7d4f81214bcd58672bd",
+          "source_cache_filename": "scene-002-8520305721451d7c.mp3",
+          "receipt": {
+            "characters": 52,
+            "credits": 21,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-003",
+          "file": "daniel/scene-003.mp3",
+          "sha256": "8885ed0022c2a2b64bbe9336e0b78f30e12fc69d6c2f3b05ed9028cb08405460",
+          "source_cache_filename": "scene-003-bb804aaeab73fa5d.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-004",
+          "file": "daniel/scene-004.mp3",
+          "sha256": "686456de50ce7b9dcb1e42a8a6568590becade29b92a095accd07b6c74530edc",
+          "source_cache_filename": "scene-004-0528e756c5984445.mp3",
+          "receipt": {
+            "characters": 47,
+            "credits": 19,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-005",
+          "file": "daniel/scene-005.mp3",
+          "sha256": "2e4e27e4f2bbd13b0f505c9c811d418cc01241664bd404f9355d8d0070463a3b",
+          "source_cache_filename": "scene-005-356dd902ddedcec7.mp3",
+          "receipt": {
+            "characters": 37,
+            "credits": 15,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-006",
+          "file": "daniel/scene-006.mp3",
+          "sha256": "3de41893f9bf8c92a87a45660d26ff46d27044a48802c076c3aef1cde757399d",
+          "source_cache_filename": "scene-006-d57e64d79d8da73d.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-007",
+          "file": "daniel/scene-007.mp3",
+          "sha256": "2630295c287af4c5475719373144ef772a1912c4cab695207fc42160b15b3932",
+          "source_cache_filename": "scene-007-34e1e5f10b83a5d3.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-008",
+          "file": "daniel/scene-008.mp3",
+          "sha256": "b2080d0ce8e8545193addce72ca649c66ced965db8e9d66210495b62c4471018",
+          "source_cache_filename": "scene-008-b43de9ed6d0d3a83.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-009",
+          "file": "daniel/scene-009.mp3",
+          "sha256": "1c55b0db9c8864ed9c3a6b7eff1c2fd20eb7be44986a292ed2faae8bbecdd043",
+          "source_cache_filename": "scene-009-684aa72aecee3766.mp3",
+          "receipt": {
+            "characters": 48,
+            "credits": 19,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-010",
+          "file": "daniel/scene-010.mp3",
+          "sha256": "7add238f4ac0321bdf130aadf6f51baf900f8303a29a495fc7ef76d8ef0a3e0a",
+          "source_cache_filename": "scene-010-7876d2bd0db9908f.mp3",
+          "receipt": {
+            "characters": 38,
+            "credits": 15,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-011",
+          "file": "daniel/scene-011.mp3",
+          "sha256": "ce9c3d4674a246d710e6e20e2dae534e927c9cf7345ec202f4b18003f2e665c8",
+          "source_cache_filename": "scene-011-b3972ae67b2d00f3.mp3",
+          "receipt": {
+            "characters": 47,
+            "credits": 19,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-012",
+          "file": "daniel/scene-012.mp3",
+          "sha256": "5e9b21666a42f2430df0bf14c061130ce841bac0fef15f8a6f3ebfefcd2e09ad",
+          "source_cache_filename": "scene-012-23977aecb46228d7.mp3",
+          "receipt": {
+            "characters": 35,
+            "credits": 14,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-013",
+          "file": "daniel/scene-013.mp3",
+          "sha256": "4c0a3659eca9bec5a8e87c88f22aacbfb78a080e943e1cf862045e0d050e7b85",
+          "source_cache_filename": "scene-013-79f0aae4059a4eb2.mp3",
+          "receipt": {
+            "characters": 46,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-014",
+          "file": "daniel/scene-014.mp3",
+          "sha256": "c826190e9a6ff8d20056a21de6829e9f7a568b4732519116817f3416339a6fe8",
+          "source_cache_filename": "scene-014-1a48cfad95bbcfe8.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-015",
+          "file": "daniel/scene-015.mp3",
+          "sha256": "ce544f4218e8fedba1f1ed8d8fd3fda417422f2e828c599374bf37a195d71bc6",
+          "source_cache_filename": "scene-015-26289a401f4ff9d6.mp3",
+          "receipt": {
+            "characters": 48,
+            "credits": 19,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-016",
+          "file": "daniel/scene-016.mp3",
+          "sha256": "8564f7c8a8f0472b9ee8e394a44064e038fd0fdbdbdc38a08662cf60dc349cab",
+          "source_cache_filename": "scene-016-3243aae9916b6c5c.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-017",
+          "file": "daniel/scene-017.mp3",
+          "sha256": "704800676bfc30a49d995b2bee7fe9f8718caf30467e7057c87291785208a45e",
+          "source_cache_filename": "scene-017-0258ac91b18e2098.mp3",
+          "receipt": {
+            "characters": 45,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-018",
+          "file": "daniel/scene-018.mp3",
+          "sha256": "7a60f7560e196048ff7a476ddf27d7663cc7df3cd63a69cb11dae680681e450d",
+          "source_cache_filename": "scene-018-5faa44d0471cb8d0.mp3",
+          "receipt": {
+            "characters": 39,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-019",
+          "file": "daniel/scene-019.mp3",
+          "sha256": "60bb46536b3f9ca891f29e47a1c59d4994ba4a05fa8f1b906f9dd1fc3e2f7985",
+          "source_cache_filename": "scene-019-6846f00cccc1f327.mp3",
+          "receipt": {
+            "characters": 38,
+            "credits": 15,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-020",
+          "file": "daniel/scene-020.mp3",
+          "sha256": "b2a3e6242c4c53bf31710be6b7564170c82d9da7e9a7997779cbda5d71175f2b",
+          "source_cache_filename": "scene-020-a03bcf30ab44331b.mp3",
+          "receipt": {
+            "characters": 38,
+            "credits": 15,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-021",
+          "file": "daniel/scene-021.mp3",
+          "sha256": "2a14e02f77d41e456225611c1438714e5eb1dbe77ec38da70d5ae6824e5d1bd3",
+          "source_cache_filename": "scene-021-e296fa4e5e7ace6e.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-022",
+          "file": "daniel/scene-022.mp3",
+          "sha256": "d8d1ea81ca9b16455cd3c335ef952c16ff4d34673744bce0397989cc39f376bf",
+          "source_cache_filename": "scene-022-df2119e56f877fdb.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-023",
+          "file": "daniel/scene-023.mp3",
+          "sha256": "642f61cb166fe642e93f8eb2397ebf9bacacf4fad3a8ef6e5999d3188821d525",
+          "source_cache_filename": "scene-023-c9fc15826af4f049.mp3",
+          "receipt": {
+            "characters": 45,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-024",
+          "file": "daniel/scene-024.mp3",
+          "sha256": "c362b20e5643c9ae60a9d4345974b917ba4b0ab1e7ab2f09256e49423a2f6dd8",
+          "source_cache_filename": "scene-024-30d965160b699164.mp3",
+          "receipt": {
+            "characters": 40,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-025",
+          "file": "daniel/scene-025.mp3",
+          "sha256": "7d7c356162cdb1e478a19b9c933100a341b625275ce7d85a42d7144b57c9ba64",
+          "source_cache_filename": "scene-025-862f64c60cedc337.mp3",
+          "receipt": {
+            "characters": 44,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-026",
+          "file": "daniel/scene-026.mp3",
+          "sha256": "004f7e45a0765c980e907491040ebcffd1c19683f45d2d4e35e3311dd9bc9342",
+          "source_cache_filename": "scene-026-ffa487f0f3b2009d.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-027",
+          "file": "daniel/scene-027.mp3",
+          "sha256": "e9d89eb8f31ab62ac5759170e165c6254b64263a6f29f226343a44fb57042635",
+          "source_cache_filename": "scene-027-d3eb721536e2a925.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-028",
+          "file": "daniel/scene-028.mp3",
+          "sha256": "ed4d926778268e3c5bf9506e6708b2f6bdaa73b99e09dcfc4ca3621754e41f79",
+          "source_cache_filename": "scene-028-2ea2d99710825779.mp3",
+          "receipt": {
+            "characters": 39,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-029",
+          "file": "daniel/scene-029.mp3",
+          "sha256": "d530b4f41001de4e466d961be167d0e465fe6ef88e25ada21ead169007c4d16e",
+          "source_cache_filename": "scene-029-fa3e460f11af45b8.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-030",
+          "file": "daniel/scene-030.mp3",
+          "sha256": "7a8b52e537d9125525cf98e436a1342749f496a16c21fe07fb934d6849bdf1c8",
+          "source_cache_filename": "scene-030-120427b44a8653d6.mp3",
+          "receipt": {
+            "characters": 38,
+            "credits": 15,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-031",
+          "file": "daniel/scene-031.mp3",
+          "sha256": "e0229ef7bf581c5017cf27dad15358e717785be73e20ec2e7596d65bf9f92979",
+          "source_cache_filename": "scene-031-d3d2645f65fdccd1.mp3",
+          "receipt": {
+            "characters": 36,
+            "credits": 14,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-032",
+          "file": "daniel/scene-032.mp3",
+          "sha256": "36eb8e06f4e391ebd60f84b1e29f36e54eba18f97111ee25d56ce9e906226800",
+          "source_cache_filename": "scene-032-3a5d52fbc2e425d4.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-033",
+          "file": "daniel/scene-033.mp3",
+          "sha256": "ad107c9e5d63f81f30fd17cf136486ba5da7b2339a26d169fea2c36b1e82ef3c",
+          "source_cache_filename": "scene-033-0c7d125c45005586.mp3",
+          "receipt": {
+            "characters": 48,
+            "credits": 19,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-034",
+          "file": "daniel/scene-034.mp3",
+          "sha256": "eedd3f25921ed18526f041066b2e111d6368a3b84db8c1272be7836e38731504",
+          "source_cache_filename": "scene-034-294894e59471a125.mp3",
+          "receipt": {
+            "characters": 35,
+            "credits": 14,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-035",
+          "file": "daniel/scene-035.mp3",
+          "sha256": "d233a08ba557446e34d6efe4fc96e8ecbe45afdc1a0a33da04644a3d70361663",
+          "source_cache_filename": "scene-035-274e320dc4838b91.mp3",
+          "receipt": {
+            "characters": 47,
+            "credits": 19,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-036",
+          "file": "daniel/scene-036.mp3",
+          "sha256": "7ce5068c79f510c93f2dc7562c7d79e21fa9bdc53b3c86f6d7e4872be724a416",
+          "source_cache_filename": "scene-036-197416c8422b0ebc.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-037",
+          "file": "daniel/scene-037.mp3",
+          "sha256": "38e5c2aa1b9e6dd15db45ed4af9a687ae69bcc08f94b1816b20d07a80835d712",
+          "source_cache_filename": "scene-037-1de80da99f3b1765.mp3",
+          "receipt": {
+            "characters": 45,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-038",
+          "file": "daniel/scene-038.mp3",
+          "sha256": "9de044135f03f1880e2f1277ffe925eabc66639db7bb7065fc53a3f6899b0a11",
+          "source_cache_filename": "scene-038-42ca503235adb078.mp3",
+          "receipt": {
+            "characters": 40,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-039",
+          "file": "daniel/scene-039.mp3",
+          "sha256": "396efbb0563b05cc1c249ac167d62dc7136a12a50e0117e84a21d46a4a93e122",
+          "source_cache_filename": "scene-039-92ff77e270e73ebf.mp3",
+          "receipt": {
+            "characters": 44,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-040",
+          "file": "daniel/scene-040.mp3",
+          "sha256": "7662f471f9662b3687a5261e92739a58d53cfdefa09929c763a292295a44e6d4",
+          "source_cache_filename": "scene-040-0661bb84aa002bf1.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-041",
+          "file": "daniel/scene-041.mp3",
+          "sha256": "5775299a1144bc3b7257a304e905c8f6c6738bd8eb9042e40d0b66755f2ddb45",
+          "source_cache_filename": "scene-041-726e6c5ebf20becb.mp3",
+          "receipt": {
+            "characters": 40,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-042",
+          "file": "daniel/scene-042.mp3",
+          "sha256": "0c7997b619aba37361583240dc125c8c1e87dd33a9b45717c2327a49a98dd0e1",
+          "source_cache_filename": "scene-042-c0479263c3ea406e.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-043",
+          "file": "daniel/scene-043.mp3",
+          "sha256": "12f19a412d87f1ec03f7518e5d6d1724edbcda3c4cd85aa3f822bfa53dc6dabb",
+          "source_cache_filename": "scene-043-41785033c9592408.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-044",
+          "file": "daniel/scene-044.mp3",
+          "sha256": "19b33f01cb45e2a2b64b3fd5f2e4d72808459742f068f9d63cf67e5d464bd154",
+          "source_cache_filename": "scene-044-1d1d55d0df5d8c61.mp3",
+          "receipt": {
+            "characters": 45,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-045",
+          "file": "daniel/scene-045.mp3",
+          "sha256": "ad4f40fbdc5e2b5e41d8d1234dca428eea6318c7e0d70dbc1b451072812f5803",
+          "source_cache_filename": "scene-045-60241b3f23a4f2e1.mp3",
+          "receipt": {
+            "characters": 37,
+            "credits": 15,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-046",
+          "file": "daniel/scene-046.mp3",
+          "sha256": "8c4f02cb480e04ff6cd50f37203ac621096fb77e77fb5e3fdcd56a7c35b5a2e0",
+          "source_cache_filename": "scene-046-e0332f725ffc8344.mp3",
+          "receipt": {
+            "characters": 46,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-047",
+          "file": "daniel/scene-047.mp3",
+          "sha256": "c9a4376c074f1343a544f40ca55d1e86ae2a6a4332aa58d24dbe466945f58fcf",
+          "source_cache_filename": "scene-047-3c24cb8fb1224ab8.mp3",
+          "receipt": {
+            "characters": 29,
+            "credits": 12,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-048",
+          "file": "daniel/scene-048.mp3",
+          "sha256": "df929c8362c7311e49137245851d7d10e4e2722046fbb07da320a8d02a09f6ea",
+          "source_cache_filename": "scene-048-b3a7d565bb08b308.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-049",
+          "file": "daniel/scene-049.mp3",
+          "sha256": "5ea39d7fcf7db3beacb76619bb63d66d20f7459b5b2803cdfae721a2c91bb393",
+          "source_cache_filename": "scene-049-9057892b2b356a5a.mp3",
+          "receipt": {
+            "characters": 48,
+            "credits": 19,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-050",
+          "file": "daniel/scene-050.mp3",
+          "sha256": "76eaab23ea27aac5ca955d375cd127a1e496bd13a8bec9f9af256a4c1c8b997c",
+          "source_cache_filename": "scene-050-6a50929b3e8fe090.mp3",
+          "receipt": {
+            "characters": 44,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-051",
+          "file": "daniel/scene-051.mp3",
+          "sha256": "40498b6cdd15d121c0024eb3b469a69ddb70f77916bebd1c9f195781de401d7f",
+          "source_cache_filename": "scene-051-5d018049fd70cd32.mp3",
+          "receipt": {
+            "characters": 46,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-052",
+          "file": "daniel/scene-052.mp3",
+          "sha256": "dd3db737a9d60609ad64e6e88b2dec0c0219c38972d01701df4763d91630416b",
+          "source_cache_filename": "scene-052-78a7b052a9a1ab63.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-053",
+          "file": "daniel/scene-053.mp3",
+          "sha256": "544e7edd80c01ee0127a80d717be8808ac6fdc08354a33eaf2cc615c3c069628",
+          "source_cache_filename": "scene-053-789b34ede4c4b207.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-054",
+          "file": "daniel/scene-054.mp3",
+          "sha256": "7f0fe7b5ff628d7787cd9efca796045761cf9c197a59ce7851859470a5ddb4fa",
+          "source_cache_filename": "scene-054-922e2d9bbc46d7d4.mp3",
+          "receipt": {
+            "characters": 39,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-055",
+          "file": "daniel/scene-055.mp3",
+          "sha256": "10ce95bebad4464fa67fc8244f94fc510e0c1b3a10fbefa54b0c37a5a1af1644",
+          "source_cache_filename": "scene-055-fb5f25577b84d6a9.mp3",
+          "receipt": {
+            "characters": 46,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-056",
+          "file": "daniel/scene-056.mp3",
+          "sha256": "32c3e9663c2e387ff740706fe203518a665bc24b89cea739add46f265ed6790c",
+          "source_cache_filename": "scene-056-ad99db39a27caeec.mp3",
+          "receipt": {
+            "characters": 46,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-057",
+          "file": "daniel/scene-057.mp3",
+          "sha256": "fa0d8627d851bda2c90be226e0335db75c5a5fe409dec02810f683d992d6b8c8",
+          "source_cache_filename": "scene-057-647498fdca2bf071.mp3",
+          "receipt": {
+            "characters": 44,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-058",
+          "file": "daniel/scene-058.mp3",
+          "sha256": "3ac6921fbb3aa0117a86329958e6b27721b60f521d88b80edf09be21b5ef513a",
+          "source_cache_filename": "scene-058-e05f393a50076a1d.mp3",
+          "receipt": {
+            "characters": 48,
+            "credits": 19,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-059",
+          "file": "daniel/scene-059.mp3",
+          "sha256": "1b353bd4d7c1a902896bd0cedc8b619a6f3fba5bb932b0956131fe024de2b766",
+          "source_cache_filename": "scene-059-27ff5f16e900a54f.mp3",
+          "receipt": {
+            "characters": 45,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-060",
+          "file": "daniel/scene-060.mp3",
+          "sha256": "288b1d783b5b2f9c1897f2621efdea56d569ea8e37420ede352d62725a68a0e2",
+          "source_cache_filename": "scene-060-d60a150728726ca0.mp3",
+          "receipt": {
+            "characters": 40,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-061",
+          "file": "daniel/scene-061.mp3",
+          "sha256": "bd65c45e9613e49b20be8fe6682d7a8a04a881cf01574716d0a5c7aa870d9053",
+          "source_cache_filename": "scene-061-987636c42615135d.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-062",
+          "file": "daniel/scene-062.mp3",
+          "sha256": "afd665681ff62a5ba44d0f62ba8796f912db7a91af5f48bed71bb7091df17f54",
+          "source_cache_filename": "scene-062-6b304a2d0840f9a9.mp3",
+          "receipt": {
+            "characters": 40,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-063",
+          "file": "daniel/scene-063.mp3",
+          "sha256": "20c051ce84d181539a7c0c5bf798aa2a10ffe9a649fde2871c970346630946d2",
+          "source_cache_filename": "scene-063-f06a7557acca756f.mp3",
+          "receipt": {
+            "characters": 45,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-064",
+          "file": "daniel/scene-064.mp3",
+          "sha256": "ef927fb6ca7df5e8ade2e67946442d5c464fa5e75ae883bd8193b3b4072ca23e",
+          "source_cache_filename": "scene-064-872d9aef0936a6cd.mp3",
+          "receipt": {
+            "characters": 45,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-065",
+          "file": "daniel/scene-065.mp3",
+          "sha256": "4da853db6d0b7060d332d0267551c9df83ae633e9c66a78efdb0e9b0927d8f61",
+          "source_cache_filename": "scene-065-1dfe23cf84dff55b.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-066",
+          "file": "daniel/scene-066.mp3",
+          "sha256": "a86ad8a1ab2e8feb7fb9e5b399a4b586c7295cc943cb7cd7de73e746376c0899",
+          "source_cache_filename": "scene-066-0bfcd6a013844e95.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-067",
+          "file": "daniel/scene-067.mp3",
+          "sha256": "e09ce7fd40d98890c20d9cf57995987859a7896f0ab083ef90cde459b3fc2448",
+          "source_cache_filename": "scene-067-6a12b581a859eeb8.mp3",
+          "receipt": {
+            "characters": 44,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-068",
+          "file": "daniel/scene-068.mp3",
+          "sha256": "568909e025b8c464083b716aa468065d87e620032073ccf390ffaa0ef136b1d0",
+          "source_cache_filename": "scene-068-e09528d5a690a728.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-069",
+          "file": "daniel/scene-069.mp3",
+          "sha256": "d899f8b9a45662d4e8c419e252f8fc74dba467aefd8cce8b167d3ca62ee6a8f8",
+          "source_cache_filename": "scene-069-7e6f51b0a8990ee7.mp3",
+          "receipt": {
+            "characters": 40,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-070",
+          "file": "daniel/scene-070.mp3",
+          "sha256": "6ef00227ea9a5478df47fcdb3ce41c48d6db477fc48dc3db3411aae07ff99871",
+          "source_cache_filename": "scene-070-98f286b8b5dd2900.mp3",
+          "receipt": {
+            "characters": 47,
+            "credits": 19,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-071",
+          "file": "daniel/scene-071.mp3",
+          "sha256": "34a652a3a109de6c0310f47d44deb42ad6eb1c9c1c4553c1c41b243a7dea81c3",
+          "source_cache_filename": "scene-071-7c6e5e15683112c7.mp3",
+          "receipt": {
+            "characters": 45,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-072",
+          "file": "daniel/scene-072.mp3",
+          "sha256": "9069c5bb21219e1a554dbb63cb7dfd43257b72b88ea6f36c6dd172f831d681f3",
+          "source_cache_filename": "scene-072-c15acb5d72240fbb.mp3",
+          "receipt": {
+            "characters": 34,
+            "credits": 14,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-073",
+          "file": "daniel/scene-073.mp3",
+          "sha256": "b9838546482f306dfccf6ba194b8060f0080c19b9386e9744eb3e5e2a6d62230",
+          "source_cache_filename": "scene-073-9d0e112ea9c88e2e.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-074",
+          "file": "daniel/scene-074.mp3",
+          "sha256": "1a924d08685afb355996742b344eb0525066268e165a8146816e7836d0fb9a27",
+          "source_cache_filename": "scene-074-fc42a3863bb47ade.mp3",
+          "receipt": {
+            "characters": 45,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-075",
+          "file": "daniel/scene-075.mp3",
+          "sha256": "5f7559633a4e3186f44a088bc4c464e1ef156d4a72216b3582706dddf3a12e3b",
+          "source_cache_filename": "scene-075-4b7a08849975f1cf.mp3",
+          "receipt": {
+            "characters": 37,
+            "credits": 15,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-076",
+          "file": "daniel/scene-076.mp3",
+          "sha256": "eca75a0d421a1673839a7a8222e4f25a7c890426c3f2cf47e6fef712003c295d",
+          "source_cache_filename": "scene-076-e5bf26d635786d61.mp3",
+          "receipt": {
+            "characters": 39,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-077",
+          "file": "daniel/scene-077.mp3",
+          "sha256": "17df02a441a83b9b62a1e00e17ba06e00acc6f6a7fe3e864c7e14f11e77c9a1d",
+          "source_cache_filename": "scene-077-70203213af4e6c99.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-078",
+          "file": "daniel/scene-078.mp3",
+          "sha256": "accaba241c2c369f25c66f12d8a3761ccd017145ee3fd8133b7be1372d6fdd59",
+          "source_cache_filename": "scene-078-b7dc516d27d9de6e.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-079",
+          "file": "daniel/scene-079.mp3",
+          "sha256": "37230ff38871ed2940d2ca85ea768083b1d54f510f50dc1b643dc8efccd6957a",
+          "source_cache_filename": "scene-079-ef13a62b1cee646e.mp3",
+          "receipt": {
+            "characters": 40,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-080",
+          "file": "daniel/scene-080.mp3",
+          "sha256": "d84ca6cf00cf92687d22dac1f2db9dc4c2c8b050a8fc7134707d8072eb2bf695",
+          "source_cache_filename": "scene-080-ac9eb7bba3e37119.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-081",
+          "file": "daniel/scene-081.mp3",
+          "sha256": "a3245e6d2bd8cbcc00b9bb2932ef540236d4901cf85bfd8ced0e00c1a3bd6fff",
+          "source_cache_filename": "scene-081-e629348584be9110.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-082",
+          "file": "daniel/scene-082.mp3",
+          "sha256": "4f39bfde5543a7cee0ccb8e2a32ec6223ee21b90a2873e97e36d348d61a2d4cf",
+          "source_cache_filename": "scene-082-df0f8952697bedbc.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-083",
+          "file": "daniel/scene-083.mp3",
+          "sha256": "c84129bb4a8c065c63af18f062c378d2231bf7cae90de0185cc6f4adfdc24d0a",
+          "source_cache_filename": "scene-083-1e13258dcf3cc32c.mp3",
+          "receipt": {
+            "characters": 45,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-084",
+          "file": "daniel/scene-084.mp3",
+          "sha256": "6f9b92b3c9f82abcc009b95ba70dda750fb8ebdcf2772b3193b8bdeaeb98cb18",
+          "source_cache_filename": "scene-084-6c824a08895c2139.mp3",
+          "receipt": {
+            "characters": 47,
+            "credits": 19,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-085",
+          "file": "daniel/scene-085.mp3",
+          "sha256": "24dda03a99af6dedc92c8b5e129da23a1275dfdf1aa447949657fd8f711dfc57",
+          "source_cache_filename": "scene-085-1c2da9a4cb165dbb.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-086",
+          "file": "daniel/scene-086.mp3",
+          "sha256": "45ca1672ea8f12c1f3a1c805e8f13cf93b26a4c0aba295318fdde82304e48c07",
+          "source_cache_filename": "scene-086-847f01aee6b9b837.mp3",
+          "receipt": {
+            "characters": 45,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-087",
+          "file": "daniel/scene-087.mp3",
+          "sha256": "f086b152832132eff585d2c6ad29e3fd5af62fd30141498a4e006d8fa7d08885",
+          "source_cache_filename": "scene-087-029c772269b675c8.mp3",
+          "receipt": {
+            "characters": 45,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-088",
+          "file": "daniel/scene-088.mp3",
+          "sha256": "e61ab8b2bdf57537ac908a4323462971f915525f74a23b8a3aac5b9cb0ae5019",
+          "source_cache_filename": "scene-088-3fdb8e599c2cb954.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-089",
+          "file": "daniel/scene-089.mp3",
+          "sha256": "57331017a86da6a89c270dba82fcc71c0712875b158bdce136fd820c40a71e6d",
+          "source_cache_filename": "scene-089-2455a476dcfa89b8.mp3",
+          "receipt": {
+            "characters": 44,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-090",
+          "file": "daniel/scene-090.mp3",
+          "sha256": "f09be4cb001e28a5f76be051d2969c2b9e218ed98e683aad93cce0b7895f8ead",
+          "source_cache_filename": "scene-090-1d58d80f23fa5a4c.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-091",
+          "file": "daniel/scene-091.mp3",
+          "sha256": "02ef5b630a908337d9f3a79d02a840352061f78619d234490628df61ea9dca7f",
+          "source_cache_filename": "scene-091-523cf22d7bf7c484.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-092",
+          "file": "daniel/scene-092.mp3",
+          "sha256": "19fb86acde97f604349b8074ea9878a7f7e7523ac3c504a3440e77c55400e6aa",
+          "source_cache_filename": "scene-092-7583e7276899776a.mp3",
+          "receipt": {
+            "characters": 40,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-093",
+          "file": "daniel/scene-093.mp3",
+          "sha256": "a9c5000454ba6e341dac060ea834a6aee4b7fcc20c668f7edc785d4df1dce9bd",
+          "source_cache_filename": "scene-093-806c3d5658369ba6.mp3",
+          "receipt": {
+            "characters": 40,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-094",
+          "file": "daniel/scene-094.mp3",
+          "sha256": "e841b400480f0eb24bfa27d4037f89657f1794918d322cbd3ad1c167924c7a26",
+          "source_cache_filename": "scene-094-6b7a1fe0b3814cb3.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-095",
+          "file": "daniel/scene-095.mp3",
+          "sha256": "dba93c2924a344e26677c2fc3ca7e9d7b06ddbf70815fb6a0897f754d2188f76",
+          "source_cache_filename": "scene-095-1132b3ffc62ce0e9.mp3",
+          "receipt": {
+            "characters": 40,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-096",
+          "file": "daniel/scene-096.mp3",
+          "sha256": "952fcde0bbffedd470187ad67823832aff441f3cff496d234161fb2108f267e6",
+          "source_cache_filename": "scene-096-12c42f3cbec5e565.mp3",
+          "receipt": {
+            "characters": 40,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-097",
+          "file": "daniel/scene-097.mp3",
+          "sha256": "038d5e5479ac416366b16c612cdc77b90f1f10ef8b9fc490f1a10e3bf6efc18d",
+          "source_cache_filename": "scene-097-f763a397552d387a.mp3",
+          "receipt": {
+            "characters": 40,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-098",
+          "file": "daniel/scene-098.mp3",
+          "sha256": "a587eb0c3a744907c8e3e2513814ea338a320249fca480df3fa3bbbd3fb7e264",
+          "source_cache_filename": "scene-098-6381e725d550e405.mp3",
+          "receipt": {
+            "characters": 38,
+            "credits": 15,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-099",
+          "file": "daniel/scene-099.mp3",
+          "sha256": "eb80abb0f761f65a9759957fe49d5557da73cc071a1c73f1d956f2128ea90807",
+          "source_cache_filename": "scene-099-b34bdc9a66df9cd5.mp3",
+          "receipt": {
+            "characters": 44,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-100",
+          "file": "daniel/scene-100.mp3",
+          "sha256": "8fe28d018e2827ee2865cf58c954bc08720c08898d5fb01bb953d5457bd1512b",
+          "source_cache_filename": "scene-100-6dce691cdeace38b.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-101",
+          "file": "daniel/scene-101.mp3",
+          "sha256": "c6455044db40656180137a5aba669f2f3b169ff0c9261c5a8a8e2674ca8a85ad",
+          "source_cache_filename": "scene-101-4dc989791719fcda.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-102",
+          "file": "daniel/scene-102.mp3",
+          "sha256": "ff7dccd3c009e366ecf99f2fa87c017a501219950d9d33684baca19e470b2d45",
+          "source_cache_filename": "scene-102-eb7912dcc6b1a102.mp3",
+          "receipt": {
+            "characters": 46,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-103",
+          "file": "daniel/scene-103.mp3",
+          "sha256": "bdc306be7133fb6aae73b874dfb35093ac700275232625fb2fb26a72c90aeebb",
+          "source_cache_filename": "scene-103-a8b07f9645fcbca0.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-104",
+          "file": "daniel/scene-104.mp3",
+          "sha256": "ec74fd88997b326b1e85eff033e05257c37a00dea0494332eefc9c674c40c664",
+          "source_cache_filename": "scene-104-f6d437ed02c37681.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-105",
+          "file": "daniel/scene-105.mp3",
+          "sha256": "c7031127e6839c565eab7c63711a2a451279edf83b3c6c657bd5c6bd42dcab99",
+          "source_cache_filename": "scene-105-2c4a459481548dcc.mp3",
+          "receipt": {
+            "characters": 44,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-106",
+          "file": "daniel/scene-106.mp3",
+          "sha256": "89bb2d7fe8dc342fdb092615395068100c3b89a05facb8bc855fd2e0bc7d13e2",
+          "source_cache_filename": "scene-106-598b7e54b0f33770.mp3",
+          "receipt": {
+            "characters": 40,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-107",
+          "file": "daniel/scene-107.mp3",
+          "sha256": "83ec821c61bf37dbf8e0e11771120ab07178e4b23c18bcadc9ecaf8d239ee016",
+          "source_cache_filename": "scene-107-245159fd21cf15e2.mp3",
+          "receipt": {
+            "characters": 44,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-108",
+          "file": "daniel/scene-108.mp3",
+          "sha256": "0aea0535feda4c29843aa1029d32a8335b7b21513d88465742ab7a2a6979b858",
+          "source_cache_filename": "scene-108-f92c1d7e3f05441c.mp3",
+          "receipt": {
+            "characters": 39,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-109",
+          "file": "daniel/scene-109.mp3",
+          "sha256": "d94d4bb4b3d059aaec8299175c488f4321bb6d1a0c0b4a8c16bcb6374a3e16f7",
+          "source_cache_filename": "scene-109-e64c04e8d4ccbdc1.mp3",
+          "receipt": {
+            "characters": 44,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-110",
+          "file": "daniel/scene-110.mp3",
+          "sha256": "6bd9a9b84189a47db5d0f5271816e06d0ef48e2fe54a434c51fcdc993ccdffe5",
+          "source_cache_filename": "scene-110-fb39cdd72d480d12.mp3",
+          "receipt": {
+            "characters": 40,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-111",
+          "file": "daniel/scene-111.mp3",
+          "sha256": "956f04988515e6cb459c04f2ce1ebc3b3aef0f2bfcc0537d3bf3fbb0b345b031",
+          "source_cache_filename": "scene-111-8066815d18b99d91.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-112",
+          "file": "daniel/scene-112.mp3",
+          "sha256": "4cad4dbb75d2179c6f784b985c34e59b1662ab72037393c648ef60be55507001",
+          "source_cache_filename": "scene-112-be1abcbfea5c97d9.mp3",
+          "receipt": {
+            "characters": 39,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-113",
+          "file": "daniel/scene-113.mp3",
+          "sha256": "cf66500619b3d33dcd67ee3df2c64a1aaf4bd3482c9026b36467710edccdacd9",
+          "source_cache_filename": "scene-113-32a7ef02308c968c.mp3",
+          "receipt": {
+            "characters": 44,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-114",
+          "file": "daniel/scene-114.mp3",
+          "sha256": "8141882a87106831ea041e0e52b2a3f2ce130927f59dbd1b93b968334a011959",
+          "source_cache_filename": "scene-114-1b47100ef0a7edb3.mp3",
+          "receipt": {
+            "characters": 36,
+            "credits": 14,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-115",
+          "file": "daniel/scene-115.mp3",
+          "sha256": "fceef969959106c00a65d01408462618af28bd224890c7c43694f14d730768d4",
+          "source_cache_filename": "scene-115-3a2b8c6378451762.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-116",
+          "file": "daniel/scene-116.mp3",
+          "sha256": "6afc503d423946dd3b18941a3755475e448b402f3d019b4746d90d6508ccec1f",
+          "source_cache_filename": "scene-116-3ce8f26cd6e40bb4.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-117",
+          "file": "daniel/scene-117.mp3",
+          "sha256": "74fcdd93d2eb1491804401bf3f57dca937777acc028172a446c86e5310acb5b5",
+          "source_cache_filename": "scene-117-59a261b932f8acfd.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-118",
+          "file": "daniel/scene-118.mp3",
+          "sha256": "fed8e0eb4f3923f726f421b73e07d24d8c2ed839649cb57940240467a37a209a",
+          "source_cache_filename": "scene-118-fc1dbc2372f06b5b.mp3",
+          "receipt": {
+            "characters": 44,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-119",
+          "file": "daniel/scene-119.mp3",
+          "sha256": "7b3a4387e06bd677ae46f03e6f98524cfcd70f721a3596b168a401d0b595bfe4",
+          "source_cache_filename": "scene-119-16d33271c8892d69.mp3",
+          "receipt": {
+            "characters": 37,
+            "credits": 15,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-120",
+          "file": "daniel/scene-120.mp3",
+          "sha256": "c775eb01e9eb8ea4c5943cba7ffb121f8229f1274b6b32589e9cb9171a852b25",
+          "source_cache_filename": "scene-120-501ccbef01758738.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-121",
+          "file": "daniel/scene-121.mp3",
+          "sha256": "7199ec8e4daf6a033c935af21723bb632f102803427c5a98e77586073db66ea8",
+          "source_cache_filename": "scene-121-f5c220b49e7ab4b0.mp3",
+          "receipt": {
+            "characters": 45,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-122",
+          "file": "daniel/scene-122.mp3",
+          "sha256": "62be7a1b73c578317ca7fa2ec696d01a4781a2c5a4f39c30ab8ea5b0d22c388f",
+          "source_cache_filename": "scene-122-8ae7b0b1380d5637.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-123",
+          "file": "daniel/scene-123.mp3",
+          "sha256": "990fcbbd06ec3ee35f8c90342966549a22050a4ec84d6ff0b278658594516a43",
+          "source_cache_filename": "scene-123-c6b1ee54d7cd6237.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-124",
+          "file": "daniel/scene-124.mp3",
+          "sha256": "24438efb4e848195863328e2a2b75d2fa00cac1c19a2f25278ab9cfa2716c454",
+          "source_cache_filename": "scene-124-864bef0dc1d04fe7.mp3",
+          "receipt": {
+            "characters": 37,
+            "credits": 15,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-125",
+          "file": "daniel/scene-125.mp3",
+          "sha256": "8a83fce9786638ebd752ff9b620fd2358d01eb5c4e63bcde3ea5182edd9d7b0e",
+          "source_cache_filename": "scene-125-7ef0e91a82230128.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-126",
+          "file": "daniel/scene-126.mp3",
+          "sha256": "caedae370e0e2a31a9e6a1ff5d31b7aff6d2337781cbbf384d168de551de4ddd",
+          "source_cache_filename": "scene-126-0b0a1cc2e6e29f48.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-127",
+          "file": "daniel/scene-127.mp3",
+          "sha256": "afcbca33f1cdc18cbabbdaa7e639832a7207eb49037f8cc7d2442ec4fa9b9f83",
+          "source_cache_filename": "scene-127-860f87693afada2f.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-128",
+          "file": "daniel/scene-128.mp3",
+          "sha256": "4fd87c69a08051ab1710a42df40ccd48964685ac63d29c58e75cd05f73f8bb41",
+          "source_cache_filename": "scene-128-3e5649fda59ced60.mp3",
+          "receipt": {
+            "characters": 37,
+            "credits": 15,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-129",
+          "file": "daniel/scene-129.mp3",
+          "sha256": "cf42d752059dba28ddfb67f15a452ee0dbf52a95b15d879ee01616c5e4bdea13",
+          "source_cache_filename": "scene-129-00368f2bba7a6ccb.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-130",
+          "file": "daniel/scene-130.mp3",
+          "sha256": "5ea1db3aa20733a15baceb72213ab089f6899e18497b9695254970cf350674e8",
+          "source_cache_filename": "scene-130-bfee4ae71aa90585.mp3",
+          "receipt": {
+            "characters": 35,
+            "credits": 14,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-131",
+          "file": "daniel/scene-131.mp3",
+          "sha256": "54eb6ad80cd617a05633b4ecbb6cbe5108a54b145a387039d86a169f7be66115",
+          "source_cache_filename": "scene-131-0fd8f42a969d2e32.mp3",
+          "receipt": {
+            "characters": 46,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-132",
+          "file": "daniel/scene-132.mp3",
+          "sha256": "290718da13f05ffd1db8eae2d9690dc469fd3a7ff6b791babcc20ed1a1c21004",
+          "source_cache_filename": "scene-132-a0d40b64aab24c05.mp3",
+          "receipt": {
+            "characters": 40,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-133",
+          "file": "daniel/scene-133.mp3",
+          "sha256": "70e8c8bb029986a8c291542933eeeec3785edbe97e6ff14206ce402ded560115",
+          "source_cache_filename": "scene-133-701005173801b09a.mp3",
+          "receipt": {
+            "characters": 39,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-134",
+          "file": "daniel/scene-134.mp3",
+          "sha256": "be765e2ec11979be6a4cb5c5dd106a18f5f53ef091c2a965b9f8c1e3fd017b71",
+          "source_cache_filename": "scene-134-475e9532e54e271b.mp3",
+          "receipt": {
+            "characters": 37,
+            "credits": 15,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-135",
+          "file": "daniel/scene-135.mp3",
+          "sha256": "dd0566c79839b4406198ace656d3263c227bd2fd17d5225877c70d8496d73f83",
+          "source_cache_filename": "scene-135-38de840fbd6d9d76.mp3",
+          "receipt": {
+            "characters": 38,
+            "credits": 15,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-136",
+          "file": "daniel/scene-136.mp3",
+          "sha256": "2381a07fe73ba46ab7085ea9a9f4a81a6145e8358698b9e000dcd25d4b000e6a",
+          "source_cache_filename": "scene-136-728e3fd4e1822949.mp3",
+          "receipt": {
+            "characters": 46,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-137",
+          "file": "daniel/scene-137.mp3",
+          "sha256": "921881a0f5501e929ac62c5ae561d3ed3c7c4f762ae0545e56e1a00c2aebd237",
+          "source_cache_filename": "scene-137-666df97d05e32b8d.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-138",
+          "file": "daniel/scene-138.mp3",
+          "sha256": "6bdc5b3cad6f41cfc269e0b559479746a1e6642818e55b7c6557bd4c30cc6ab6",
+          "source_cache_filename": "scene-138-7164d28517f7b596.mp3",
+          "receipt": {
+            "characters": 47,
+            "credits": 19,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-139",
+          "file": "daniel/scene-139.mp3",
+          "sha256": "495e7433afb06dc9b2948d764d2a58edf031e6611c56bae1f9c84acb469f0d93",
+          "source_cache_filename": "scene-139-6a43f59ab8552cf4.mp3",
+          "receipt": {
+            "characters": 45,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-140",
+          "file": "daniel/scene-140.mp3",
+          "sha256": "b13d095827e68219b3b17838978268de7b5471b239fca0073edfb94392851e15",
+          "source_cache_filename": "scene-140-eac47764021c8f5c.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-141",
+          "file": "daniel/scene-141.mp3",
+          "sha256": "b71309564b80339bf2753fb32e746a2c0ed4920682a31d9f5cb9b4ea9e3cba4b",
+          "source_cache_filename": "scene-141-7c295578f1c39bf7.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-142",
+          "file": "daniel/scene-142.mp3",
+          "sha256": "2e6ce1fea66f57d42d4bb2df5e8a1c2e598eb1329fb7bbbae644a5574852f312",
+          "source_cache_filename": "scene-142-75ec51da46985e2c.mp3",
+          "receipt": {
+            "characters": 37,
+            "credits": 15,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-143",
+          "file": "daniel/scene-143.mp3",
+          "sha256": "6fd7717300112998762fe69fe164bf785b42e30c98e6b828eb89fd01650fe208",
+          "source_cache_filename": "scene-143-92eb71c49429bd17.mp3",
+          "receipt": {
+            "characters": 40,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-144",
+          "file": "daniel/scene-144.mp3",
+          "sha256": "d1985ed5ec644a4217725afbfa8dea1c62b5b8cc2fc5ad240e146715a7ba4454",
+          "source_cache_filename": "scene-144-5b295b77ad453485.mp3",
+          "receipt": {
+            "characters": 46,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-145",
+          "file": "daniel/scene-145.mp3",
+          "sha256": "1452ad507e4a1af1f68f5fa7ffb82bc3f9fa752ae548bb733d18f2add99564b2",
+          "source_cache_filename": "scene-145-3cbcef936aff414b.mp3",
+          "receipt": {
+            "characters": 48,
+            "credits": 19,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-146",
+          "file": "daniel/scene-146.mp3",
+          "sha256": "d215099621ab83159c79c20e99a372406cbe17e421d74a3f970d11fd7eec115e",
+          "source_cache_filename": "scene-146-3f5c06436742e0d9.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-147",
+          "file": "daniel/scene-147.mp3",
+          "sha256": "6e2a9326cead35c502116e5ebf651100133e90afe3fb931fddcd8f2977c3d383",
+          "source_cache_filename": "scene-147-e810b8fd4a35af05.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-148",
+          "file": "daniel/scene-148.mp3",
+          "sha256": "bbaf7727e81bd84249bd59791a87d9530a82831ce38f8d5ad70d9d44ba7b4532",
+          "source_cache_filename": "scene-148-97270711c298132a.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-149",
+          "file": "daniel/scene-149.mp3",
+          "sha256": "fbc16269a1ab07b7686b91faac4fec8efadb0ed99a831963e15cb8c38c9ffd04",
+          "source_cache_filename": "scene-149-403bb04d6ff33ff9.mp3",
+          "receipt": {
+            "characters": 45,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-150",
+          "file": "daniel/scene-150.mp3",
+          "sha256": "36f589fe4a26af13c13476d6c12baf99fa2c3a3f49ec8808867b023fad38ef45",
+          "source_cache_filename": "scene-150-d6455e494c1b2443.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-151",
+          "file": "daniel/scene-151.mp3",
+          "sha256": "5da21fc35e807bf51a870e73f65ee3948488aed1ea2e473a05069adb6a2dc361",
+          "source_cache_filename": "scene-151-8e4e4bdc802c2398.mp3",
+          "receipt": {
+            "characters": 36,
+            "credits": 14,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-152",
+          "file": "daniel/scene-152.mp3",
+          "sha256": "95fb1df731d0ad2c0db8c86a2cb64a67f6278725268beddfbe11b59fcd5e9b04",
+          "source_cache_filename": "scene-152-479b00a25669e650.mp3",
+          "receipt": {
+            "characters": 46,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-153",
+          "file": "daniel/scene-153.mp3",
+          "sha256": "558b29778ea73a5899cf014f6813317a61fcb67e6719838a79bf6d23efc9c68b",
+          "source_cache_filename": "scene-153-c95923f7f572742e.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-154",
+          "file": "daniel/scene-154.mp3",
+          "sha256": "68ea381c26e5bc982313898fa9dd21c7c072f4cb7f9abb13b1fa38eae658cb63",
+          "source_cache_filename": "scene-154-9a28201aad778cf5.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-155",
+          "file": "daniel/scene-155.mp3",
+          "sha256": "979e659b6f530b9affbc37ac9bbec0ec0bfcc21fe9f74b4d687951ad238b9a3c",
+          "source_cache_filename": "scene-155-9ea631242f9bbf5e.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-156",
+          "file": "daniel/scene-156.mp3",
+          "sha256": "e703b2d05efc71b9935bc2803c2652c4a8cb7d18086e22908366f166070ca6c9",
+          "source_cache_filename": "scene-156-dc1219b556c06c35.mp3",
+          "receipt": {
+            "characters": 44,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-157",
+          "file": "daniel/scene-157.mp3",
+          "sha256": "06c71a459de14803482b1a6ebbc2b101a1f085b0d93fd248b41a812418a01f22",
+          "source_cache_filename": "scene-157-bdc92b8170e1af31.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-158",
+          "file": "daniel/scene-158.mp3",
+          "sha256": "ef8bc96807b2c075147587eae346f07ab214a575fd9dcba3bd8ac1cfacea29b8",
+          "source_cache_filename": "scene-158-ad172944bca0ec73.mp3",
+          "receipt": {
+            "characters": 40,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-159",
+          "file": "daniel/scene-159.mp3",
+          "sha256": "b6a5fbd04413e348c79983794b795b3eb0426f609c66f3cb691cf5bd8d263ef6",
+          "source_cache_filename": "scene-159-f8feb8a6e42a1996.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-160",
+          "file": "daniel/scene-160.mp3",
+          "sha256": "6c4c16f3259aa713e16a4eb41d686996c57cad18308c87266c60deb0769d4a13",
+          "source_cache_filename": "scene-160-790f815d348fe6ed.mp3",
+          "receipt": {
+            "characters": 44,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-161",
+          "file": "daniel/scene-161.mp3",
+          "sha256": "0a0fa648f8a5956b63b79fef6db2374546b1a2874464c6b687e52a366c1a5dfd",
+          "source_cache_filename": "scene-161-304bf66e4830ebbe.mp3",
+          "receipt": {
+            "characters": 48,
+            "credits": 19,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-162",
+          "file": "daniel/scene-162.mp3",
+          "sha256": "f26111530f35588b233518a8be31f753cd57305b69337be39aa5e73288bab7d4",
+          "source_cache_filename": "scene-162-e7e0c4b2d8bdf837.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-163",
+          "file": "daniel/scene-163.mp3",
+          "sha256": "42573cb9c2ef2cde384d8cadcdbb1aa2da5d9abd265d58d0fecaf85f382099c3",
+          "source_cache_filename": "scene-163-be41a55861b77189.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-164",
+          "file": "daniel/scene-164.mp3",
+          "sha256": "d6516af3cd8efcbb8ff13b3dc8f13b9a0bb0f5b344b463704374851b612676bc",
+          "source_cache_filename": "scene-164-d7151c070f9f1a79.mp3",
+          "receipt": {
+            "characters": 44,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-165",
+          "file": "daniel/scene-165.mp3",
+          "sha256": "af568b70d9a456c65687cf48f4aaa6bac0449c16d9d30cf5af24a25390a462d2",
+          "source_cache_filename": "scene-165-a5dad152a69ce417.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-166",
+          "file": "daniel/scene-166.mp3",
+          "sha256": "7f418b3a193b07b93934f5a10a8b8217a93af821fd0d3c32b97c78b907ce2870",
+          "source_cache_filename": "scene-166-760ee173c0737b9b.mp3",
+          "receipt": {
+            "characters": 46,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-167",
+          "file": "daniel/scene-167.mp3",
+          "sha256": "1c71fc96fcc25c1859f32ac850575be70e3ee7668f67c8ee56c1e2ade6d7db78",
+          "source_cache_filename": "scene-167-410a8635c33d92fa.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-168",
+          "file": "daniel/scene-168.mp3",
+          "sha256": "2a54849b2e06c930a353159b4d11d709c16af05b9efb9003ab2b53787dbb0e7b",
+          "source_cache_filename": "scene-168-074fa05308a89c7a.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-169",
+          "file": "daniel/scene-169.mp3",
+          "sha256": "91e050eb36c3a215429260afb8cea3bca6920631a0a5091aaa6c8be34d7b777c",
+          "source_cache_filename": "scene-169-34ce74dbb6d54f2c.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-170",
+          "file": "daniel/scene-170.mp3",
+          "sha256": "f22b4613dcd9e4715d827797f18585325db2387bf1fd3414f91a989b477d4386",
+          "source_cache_filename": "scene-170-5489624c9143bd73.mp3",
+          "receipt": {
+            "characters": 45,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-171",
+          "file": "daniel/scene-171.mp3",
+          "sha256": "5b1cfe9074976098b1b8faf57cad6253f2021c5b56620c95e66b064ec9547568",
+          "source_cache_filename": "scene-171-2fa742a63651268f.mp3",
+          "receipt": {
+            "characters": 40,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-172",
+          "file": "daniel/scene-172.mp3",
+          "sha256": "61eb3fd879f2db797d367c936a6739c427024ab42a4670690214119a8d20ff6e",
+          "source_cache_filename": "scene-172-b0ecc18611ffc2b9.mp3",
+          "receipt": {
+            "characters": 44,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-173",
+          "file": "daniel/scene-173.mp3",
+          "sha256": "e40dbd280026dcf29154e49fcc09b80f4e3699aada5b839adfa0c4db79421b8e",
+          "source_cache_filename": "scene-173-6648e6369c4b5611.mp3",
+          "receipt": {
+            "characters": 47,
+            "credits": 19,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-174",
+          "file": "daniel/scene-174.mp3",
+          "sha256": "b76f3b7aab96acca4a670356b6aef9d16264e1c89fb1bc4206df9ceca1f96384",
+          "source_cache_filename": "scene-174-84c7d32abab3d06c.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-175",
+          "file": "daniel/scene-175.mp3",
+          "sha256": "ea4e4bf86933914a760fc3a28b0cf1e1b9415645bd051193809fbebf1b8e7589",
+          "source_cache_filename": "scene-175-c71f33539e310274.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-176",
+          "file": "daniel/scene-176.mp3",
+          "sha256": "75d1add2f2d660787cad65beddba8f170645813e59a2d88eee240dc33f718007",
+          "source_cache_filename": "scene-176-0629ba17aa382382.mp3",
+          "receipt": {
+            "characters": 39,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-177",
+          "file": "daniel/scene-177.mp3",
+          "sha256": "fe5b28e64b4f2fa3fb121e692d56a4cdc4714af9b828638c10f6f04c47ea9db3",
+          "source_cache_filename": "scene-177-027f865ab335784b.mp3",
+          "receipt": {
+            "characters": 44,
+            "credits": 18,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-178",
+          "file": "daniel/scene-178.mp3",
+          "sha256": "4c14b606d108cfa777ebc763b478e2079e86aff4d200dd235a9f21744a73dca1",
+          "source_cache_filename": "scene-178-b16c9019e40d87b2.mp3",
+          "receipt": {
+            "characters": 35,
+            "credits": 14,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-179",
+          "file": "daniel/scene-179.mp3",
+          "sha256": "f3c1740b287e2e3f3f6fd7c49c503872ba8010d5715ecf73a9cb53dc589dfd50",
+          "source_cache_filename": "scene-179-e100375c336797e9.mp3",
+          "receipt": {
+            "characters": 41,
+            "credits": 16,
+            "name": "Daniel - Professional Representative"
+          }
+        },
+        {
+          "id": "scene-180",
+          "file": "daniel/scene-180.mp3",
+          "sha256": "ef21ba6218d3f72de678abebca3d661c6c992a4652dc238053dd9ef3c58adc1a",
+          "source_cache_filename": "scene-180-b6deefa1915553f3.mp3",
+          "receipt": {
+            "characters": 42,
+            "credits": 17,
+            "name": "Daniel - Professional Representative"
+          }
+        }
+      ]
+    },
+    {
+      "id": "katie",
+      "name": "Katie",
+      "voice_id": "m4hBEimiy2ffkQ0hHMVD",
+      "selected": false,
+      "source_speed": 0.85,
+      "source_cache_profile": "55b13152f56ab880",
+      "clips": [
+        {
+          "id": "scene-001",
+          "file": "auditions/katie/scene-001.mp3",
+          "sha256": "9d3703af479f4ff03960459c1c0ed5c4dc99302c9ff7adb813eb06fad7867861",
+          "source_cache_filename": "scene-001-f7d5143cb1e8ca00.mp3",
+          "receipt": {
+            "characters": 49,
+            "credits": 20,
+            "name": "Katie - Audiobook & Documentary Narrator"
+          }
+        },
+        {
+          "id": "scene-002",
+          "file": "auditions/katie/scene-002.mp3",
+          "sha256": "e55e26c330d1a0295b21021cd6760d65481f4421c628ac41a058a266f896f11b",
+          "source_cache_filename": "scene-002-8520305721451d7c.mp3",
+          "receipt": {
+            "characters": 52,
+            "credits": 21,
+            "name": "Katie - Audiobook & Documentary Narrator"
+          }
+        },
+        {
+          "id": "scene-003",
+          "file": "auditions/katie/scene-003.mp3",
+          "sha256": "0c2faf4eb1bbc89c6c8b5166a6378bae40cf20369f4f62849144d4056431e6e2",
+          "source_cache_filename": "scene-003-bb804aaeab73fa5d.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Katie - Audiobook & Documentary Narrator"
+          }
+        }
+      ]
+    },
+    {
+      "id": "lindsey",
+      "name": "Lindsey Grace",
+      "voice_id": "JAATlCsz6GCH2vUjFcLg",
+      "selected": false,
+      "source_speed": 0.85,
+      "source_cache_profile": "996ec7bafe837d6a",
+      "clips": [
+        {
+          "id": "scene-001",
+          "file": "auditions/lindsey-grace/scene-001.mp3",
+          "sha256": "dfeda5e7c6b6dbd6d2ff6fc988d42129e3256a2aab8d29da663cd14bb97b4b75",
+          "source_cache_filename": "scene-001-f7d5143cb1e8ca00.mp3",
+          "receipt": {
+            "characters": 49,
+            "credits": 20,
+            "name": "Lindsey Grace - Relaxing & Relatable"
+          }
+        },
+        {
+          "id": "scene-002",
+          "file": "auditions/lindsey-grace/scene-002.mp3",
+          "sha256": "76c2cf9ff255e114bbd8637af5820939d2de43a4fbc6bef422ecccbd39385e3f",
+          "source_cache_filename": "scene-002-8520305721451d7c.mp3",
+          "receipt": {
+            "characters": 52,
+            "credits": 21,
+            "name": "Lindsey Grace - Relaxing & Relatable"
+          }
+        },
+        {
+          "id": "scene-003",
+          "file": "auditions/lindsey-grace/scene-003.mp3",
+          "sha256": "0c7fe109fa2d843c8b5bd6e960f9bacbaaae2a1dab3b1a31ca65b86576b2517e",
+          "source_cache_filename": "scene-003-bb804aaeab73fa5d.mp3",
+          "receipt": {
+            "characters": 43,
+            "credits": 17,
+            "name": "Lindsey Grace - Relaxing & Relatable"
+          }
+        }
+      ]
+    }
+  ]
+}

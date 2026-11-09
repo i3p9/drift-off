@@ -1,0 +1,18 @@
+# Local secrets and Cloudflare development state
+.env*
+.dev.vars*
+.wrangler/
+
+# Generated files, dependencies, and narration caches
+/dist/
+/node_modules/
+/.audio-tmp/
+/*.zip
+__pycache__/
+*.py[cod]
+*.log
+
+# Operating system files
+.DS_Store
+._*
+Thumbs.db
