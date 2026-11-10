@@ -1,5 +1,4 @@
-// Original prompts and pre-generated AI narration.
-globalThis.DRIFT_CATALOG = {
+{
   "voices": [
     {
       "id": "serena",
@@ -1456,4 +1455,4 @@ globalThis.DRIFT_CATALOG = {
       }
     }
   ]
-};
+}
