@@ -2,6 +2,8 @@
 
 A personal sleep-scene player with 180 original prompts and pre-generated Serena and Daniel narration. The app name is independent of the GitHub repository name.
 
+For the current checkpoint and remaining checks, see the [session handoff](docs/handoff.md).
+
 ## Develop locally
 
 Use Node.js 22.12 or newer:
@@ -13,9 +15,9 @@ npm run dev
 
 Open the local URL Vite prints. The app uses plain JavaScript modules and CSS. There is no UI framework, backend, account system, or voice API at runtime. Development uses a local server; offline listening uses the installed production app.
 
-Choose a session length, pauses, voice, and volume in Settings, then select **Begin winding down**. Sessions shuffle scenes without repeating until the collection has been used. They last 3–30 minutes, with 8–22-second pauses, an optional gradual fade, and a silent ending. Pause, resume, and dark-screen controls are included.
+Choose a session length, pauses, voice, and volume in Preferences, then select **Begin winding down**. Sessions shuffle scenes without repeating until the collection has been used. They last 3–30 minutes, with 8–22-second pauses, an optional gradual fade, and a silent ending. Pause, resume, and dark-screen controls are included.
 
-Settings uses a bottom sheet on phones, with stepped sliders for duration and pauses, a Serena / Daniel selector, a volume slider, and a gradual-fade switch. Changes save as you make them. The Done button stays above the scrolling controls, including in landscape.
+Preferences opens at `/preferences` as a full-height screen on phones, with a Back button and browser Back/Forward support. Desktop uses a compact dialog without changing the URL. Both share stepped duration and pause sliders, a Serena / Daniel selector, voice volume, and a gradual-fade switch. Changes save immediately. Focus starts on the title, and the header stays above the scrolling controls. The underlying page is locked while any dialog is open and keeps its scroll position when closed.
 
 Background sound is on the main page, directly below **Begin winding down**. Use the **Off / Soft rain / Pink noise / Brown noise** buttons and the separate volume slider, initially 10%. The slider stays in place and is dimmed and disabled when sound is Off, so switching sounds does not shift the layout. Choose the sound and level before starting; the session is prepared with those settings. Background sound follows gradual softening when enabled and always fades to silence over the final 15 seconds. Background audio has an additional 50% gain reduction across the slider range. The mix reserves headroom to avoid clipping. Saved volume choices remain as set; the 10% default applies to new or reset preferences.
 
@@ -52,6 +54,8 @@ The current project uses [Cloudflare Workers Builds](https://developers.cloudfla
 
 The `.node-version` file selects Node.js 22. `wrangler.toml` serves `dist/` as static assets; its Worker name must match the dashboard project. No ElevenLabs key or app secrets are needed. The repository name can differ from the Drift app name.
 
+The `assets.not_found_handling = "single-page-application"` setting lets direct visits and reloads at `/preferences` load the same app entry, using [Cloudflare's SPA routing](https://developers.cloudflare.com/workers/static-assets/routing/single-page-application/). The existing service-worker navigation fallback covers the route offline. Opening preferences inside the app uses browser history without reloading playback.
+
 ## Privacy
 
 The player uses its own scripts, styles, artwork, and narration. It makes no analytics, speech-provider, or session-reporting requests. The production Content Security Policy permits only same-origin connections, including audio downloads and offline caching. It blocks third-party assets and connections.
@@ -77,6 +81,7 @@ src/main.js            UI events and rendering
 src/brand.js           Shared planet artwork and reduced-motion feedback
 src/assets/planet.svg  Master drawing for the header, hero, and icons
 src/settings.js        Preference defaults, validation, and storage
+src/preferences.js     Mobile preferences route, dialog navigation, and focus
 src/install.js         Installation and offline-ready feedback
 src/audio/             Session planning, composition, player, and OS controls
 src/data/scenes.json   Prompt text, voices, and timing metadata

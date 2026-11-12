@@ -9,6 +9,7 @@ This migration was checked in code and the terminal. Browser testing was left to
 3. On iPhone/iPad, use Safari's **Share → Add to Home Screen**, enable **Open as Web App** if offered, and tap **Add**. On Android, accept **Install app** or use the browser menu.
 4. Launch Drift from the home-screen icon. Check that it opens without the normal browser address bar and respects the camera cutout and home indicator. Open **About** and wait for its offline-ready message too; an installed app can use different storage from the browser.
 5. Turn on airplane mode. Close and reopen Drift, then start a session with each voice and each background sound. Both voices, rain, pink noise, and brown noise should work offline.
+6. Open `/preferences` and reload while offline. The preferences screen should still open; its Back button should return home.
 
 ## Locked screen and interruptions
 
@@ -32,9 +33,11 @@ Media Session supplies OS controls, and the track contains its own pauses; neith
 
 ## Layout and accessibility
 
-- Check portrait and landscape, including a small screen. Settings should scroll without hiding the Done button.
-- In Settings, slide through all duration choices (3, 5, 7, 10, 15, 20, 30 minutes) and pauses (8, 10, 12, 14, 18, 22 seconds). Values should update while dragging, with no keyboard or dropdown appearing.
-- Switch between Serena and Daniel, adjust voice volume, and tap the Gradual fade row. Close with Done and reopen; all choices should be kept. Confirm the main-page summary agrees.
+- On a phone, open Preferences from a scrolled home page. It should occupy the full screen at `/preferences`, with a centered title and Back button. Swiping should scroll only the preferences content. Return home and confirm the previous scroll position is kept. Repeat with About and Install to check their background scroll locks too.
+- Check portrait and landscape, including a small screen. Preferences content should scroll without hiding Back or overlapping the camera cutout and home indicator. Opening should use a short forward transition, without highlighting an action button.
+- Test the screen's Back button, browser Back/Forward, a direct visit to `/preferences`, and a refresh there. A direct visit's Back button should return home. On desktop, normal opening should keep the current URL and show a centered panel with Done; Escape and clicking outside should close it.
+- In Preferences, slide through all duration choices (3, 5, 7, 10, 15, 20, 30 minutes) and pauses (8, 10, 12, 14, 18, 22 seconds). Values should update while dragging, with no keyboard or dropdown appearing.
+- Switch between Serena and Daniel, adjust voice volume, and tap the Gradual fade row. Close and reopen; all choices should be kept. Confirm the main-page summary agrees.
 - With a keyboard or screen reader, check that time sliders announce minutes or seconds, volume announces percent, and the voice choices and fade switch expose their selected state.
 - Test Settings, Install, About, pause/resume, Cancel during preparation, and Darken screen.
 - Check low, medium, and zero app volume. The app volume is part of the prepared audio, including on iPhones.

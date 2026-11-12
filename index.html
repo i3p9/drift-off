@@ -21,123 +21,130 @@
     <script type="module" src="/src/main.js"></script>
   </head>
   <body>
-    <div class="app-shell">
-      <header class="site-header">
-        <a class="wordmark" href="#" aria-label="Drift home" id="home-link">
-          <span class="brand-mark" data-planet aria-hidden="true"></span>
-          <span>drift<span class="wordmark-dot">.</span></span>
-        </a>
-        <div class="header-actions">
-          <button
-            class="icon-button"
-            id="settings-button"
-            aria-label="Settings"
-            title="Settings"
-            type="button"
-          >
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M4 7h10m4 0h2M4 17h2m4 0h10" />
-              <circle cx="16" cy="7" r="2" />
-              <circle cx="8" cy="17" r="2" />
-            </svg>
-          </button>
-        </div>
-      </header>
+    <div class="app-viewport">
+      <div class="app-shell">
+        <header class="site-header">
+          <a class="wordmark" href="#" aria-label="Drift home" id="home-link">
+            <span class="brand-mark" data-planet aria-hidden="true"></span>
+            <span>drift<span class="wordmark-dot">.</span></span>
+          </a>
+          <div class="header-actions">
+            <button
+              class="icon-button"
+              id="settings-button"
+              aria-label="Preferences"
+              title="Preferences"
+              type="button"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 7h10m4 0h2M4 17h2m4 0h10" />
+                <circle cx="16" cy="7" r="2" />
+                <circle cx="8" cy="17" r="2" />
+              </svg>
+            </button>
+          </div>
+        </header>
 
-      <main class="main-content" id="main-content">
-        <div class="planet-scene" data-planet aria-hidden="true"></div>
+        <main class="main-content" id="main-content">
+          <div class="planet-scene" data-planet aria-hidden="true"></div>
 
-        <section class="welcome" id="welcome" aria-labelledby="welcome-title">
-          <p class="eyebrow">A little space to unwind</p>
-          <h1 id="welcome-title">Let the day<br /><em>drift away.</em></h1>
-          <p class="intro">
-            Close your eyes and imagine each little scene.<br />Let it fade as the next one arrives.
-          </p>
-          <button class="start-button" id="start-button" type="button">
-            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7 4 9 6-9 6V4Z" /></svg>
-            <span id="start-label">Begin winding down</span>
-          </button>
-          <fieldset class="background-picker">
-            <legend>Background sound</legend>
-            <div class="segmented-control background-options" id="background-options"></div>
-            <div class="background-volume is-off" id="background-volume-row">
-              <label for="background-volume">Sound volume</label>
-              <div class="volume-control">
-                <input
-                  id="background-volume"
-                  type="range"
-                  min="0"
-                  max="100"
-                  step="1"
-                  value="10"
-                  disabled
-                />
-                <output id="background-volume-output" for="background-volume">10%</output>
+          <section class="welcome" id="welcome" aria-labelledby="welcome-title">
+            <p class="eyebrow">A little space to unwind</p>
+            <h1 id="welcome-title">Let the day<br /><em>drift away.</em></h1>
+            <p class="intro">
+              Close your eyes and imagine each little scene.<br />Let it fade as the next one
+              arrives.
+            </p>
+            <button class="start-button" id="start-button" type="button">
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7 4 9 6-9 6V4Z" /></svg>
+              <span id="start-label">Begin winding down</span>
+            </button>
+            <fieldset class="background-picker">
+              <legend>Background sound</legend>
+              <div class="segmented-control background-options" id="background-options"></div>
+              <div class="background-volume is-off" id="background-volume-row">
+                <label for="background-volume">Sound volume</label>
+                <div class="volume-control">
+                  <input
+                    id="background-volume"
+                    type="range"
+                    min="0"
+                    max="100"
+                    step="1"
+                    value="10"
+                    disabled
+                  />
+                  <output id="background-volume-output" for="background-volume">10%</output>
+                </div>
+              </div>
+            </fieldset>
+            <p class="session-summary" id="session-summary">
+              7 minutes · 14-second pauses · Serena
+            </p>
+            <p class="completion-note" id="completion-note" hidden>
+              Your session ended quietly. Take your time.
+            </p>
+          </section>
+
+          <section class="session" id="session" aria-labelledby="session-title" hidden>
+            <p class="eyebrow" id="session-eyebrow">Your time to drift</p>
+            <h1 id="session-title">Nothing to do.<br /><em>Nowhere to be.</em></h1>
+            <p class="session-guidance" id="session-guidance">
+              Close your eyes. Let each scene come and go.
+            </p>
+            <div class="timeline">
+              <progress
+                id="session-progress"
+                value="0"
+                max="420"
+                aria-label="Session progress"
+              ></progress>
+              <div class="timeline-labels">
+                <span id="playback-state">Preparing your scenes…</span
+                ><span class="time" id="time-left">7:00</span>
               </div>
             </div>
-          </fieldset>
-          <p class="session-summary" id="session-summary">7 minutes · 14-second pauses · Serena</p>
-          <p class="completion-note" id="completion-note" hidden>
-            Your session ended quietly. Take your time.
-          </p>
-        </section>
-
-        <section class="session" id="session" aria-labelledby="session-title" hidden>
-          <p class="eyebrow" id="session-eyebrow">Your time to drift</p>
-          <h1 id="session-title">Nothing to do.<br /><em>Nowhere to be.</em></h1>
-          <p class="session-guidance" id="session-guidance">
-            Close your eyes. Let each scene come and go.
-          </p>
-          <div class="timeline">
-            <progress
-              id="session-progress"
-              value="0"
-              max="420"
-              aria-label="Session progress"
-            ></progress>
-            <div class="timeline-labels">
-              <span id="playback-state">Preparing your scenes…</span
-              ><span class="time" id="time-left">7:00</span>
+            <div class="playback-controls">
+              <button class="pause-button" id="pause-button" type="button" disabled>
+                <svg id="pause-icon" viewBox="0 0 20 20" aria-hidden="true">
+                  <path d="M6 4v12M14 4v12" />
+                </svg>
+                <span id="pause-label">Pause</span>
+              </button>
+              <button class="text-button" id="end-button" type="button">End session</button>
             </div>
-          </div>
-          <div class="playback-controls">
-            <button class="pause-button" id="pause-button" type="button" disabled>
-              <svg id="pause-icon" viewBox="0 0 20 20" aria-hidden="true">
-                <path d="M6 4v12M14 4v12" />
+            <button class="darken-button" id="darken-button" type="button" hidden>
+              <svg viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M14.8 14.3a7 7 0 0 1-7.9-10A7 7 0 1 0 14.8 14.3Z" />
               </svg>
-              <span id="pause-label">Pause</span>
+              Darken screen
             </button>
-            <button class="text-button" id="end-button" type="button">End session</button>
-          </div>
-          <button class="darken-button" id="darken-button" type="button" hidden>
-            <svg viewBox="0 0 20 20" aria-hidden="true">
-              <path d="M14.8 14.3a7 7 0 0 1-7.9-10A7 7 0 1 0 14.8 14.3Z" />
-            </svg>
-            Darken screen
-          </button>
-        </section>
-        <p class="status-message" id="status-message" role="status" aria-live="polite" hidden></p>
-      </main>
+          </section>
+          <p class="status-message" id="status-message" role="status" aria-live="polite" hidden></p>
+        </main>
 
-      <footer class="site-footer">
-        <span class="footer-message"
-          ><span class="quiet-dot" aria-hidden="true"></span>Just this moment. Nothing to keep track
-          of.</span
-        >
-        <div class="footer-links">
-          <button class="footer-link" id="install-button" type="button">Install app</button
-          ><button class="footer-link" id="privacy-button" aria-label="About Drift" type="button">
-            About
-          </button>
-        </div>
-      </footer>
+        <footer class="site-footer">
+          <span class="footer-message"
+            ><span class="quiet-dot" aria-hidden="true"></span>Just this moment. Nothing to keep
+            track of.</span
+          >
+          <div class="footer-links">
+            <button class="footer-link" id="install-button" type="button">Install app</button
+            ><button class="footer-link" id="privacy-button" aria-label="About Drift" type="button">
+              About
+            </button>
+          </div>
+        </footer>
+      </div>
     </div>
 
     <dialog class="settings-dialog" id="settings-dialog" aria-labelledby="settings-title">
       <header class="settings-header">
-        <h2 id="settings-title">Settings</h2>
-        <button class="settings-done" data-close="settings-dialog" type="button" autofocus>
-          Done
+        <h2 id="settings-title" tabindex="-1">Preferences</h2>
+        <button class="settings-close" id="preferences-back" type="button">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m12 4-6 6 6 6" /></svg>
+          <span class="settings-back-label">Back</span>
+          <span class="settings-done-label">Done</span>
         </button>
       </header>
       <div class="settings-content">

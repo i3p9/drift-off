@@ -13,6 +13,7 @@ import { createPlayer } from "./audio/player.js";
 import { initializeInstall } from "./install.js";
 import { initializeBrand, syncArtworkMotion } from "./brand.js";
 import { BACKGROUNDS } from "./data/backgrounds.js";
+import { initializePreferences } from "./preferences.js";
 
 initializeBrand();
 
@@ -221,10 +222,6 @@ ui.home.addEventListener("click", (event) => {
   event.preventDefault();
   if (["idle", "finished"].includes(player.state)) player.stop();
 });
-ui.settings.addEventListener("click", () => {
-  syncSettings();
-  ui.settingsDialog.showModal();
-});
 ui.about.addEventListener("click", () => {
   ui.resetFeedback.hidden = true;
   ui.aboutDialog.showModal();
@@ -234,6 +231,7 @@ for (const button of document.querySelectorAll("[data-close]")) {
   button.addEventListener("click", () => byId(button.dataset.close).close());
 }
 for (const dialog of document.querySelectorAll("dialog")) {
+  if (dialog === ui.settingsDialog) continue;
   dialog.addEventListener("click", (event) => {
     const bounds = dialog.getBoundingClientRect();
     const outside =
@@ -279,3 +277,10 @@ byId("scene-count").textContent = catalog.scenes.length + " original scenes. Two
 initializeInstall();
 syncSettings();
 renderState("idle", null);
+initializePreferences({
+  button: ui.settings,
+  dialog: ui.settingsDialog,
+  closeButton: byId("preferences-back"),
+  heading: byId("settings-title"),
+  onOpen: syncSettings,
+});
