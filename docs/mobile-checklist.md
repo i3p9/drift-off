@@ -33,6 +33,9 @@ Media Session supplies OS controls, and the track contains its own pauses; neith
 ## Layout and accessibility
 
 - Check portrait and landscape, including a small screen. Settings should scroll without hiding the Done button.
+- In Settings, slide through all duration choices (3, 5, 7, 10, 15, 20, 30 minutes) and pauses (8, 10, 12, 14, 18, 22 seconds). Values should update while dragging, with no keyboard or dropdown appearing.
+- Switch between Serena and Daniel, adjust voice volume, and tap the Gradual fade row. Close with Done and reopen; all choices should be kept. Confirm the main-page summary agrees.
+- With a keyboard or screen reader, check that time sliders announce minutes or seconds, volume announces percent, and the voice choices and fade switch expose their selected state.
 - Test Settings, Install, About, pause/resume, Cancel during preparation, and Darken screen.
 - Check low, medium, and zero app volume. The app volume is part of the prepared audio, including on iPhones.
 - Confirm the central planet and both rings stay still. The rings should glow gently, and each small moon should travel along its ring. Check the smaller header mark and the favicon/home-screen icon use the same planet design.

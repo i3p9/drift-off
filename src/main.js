@@ -37,9 +37,11 @@ const ui = {
   message: byId("status-message"),
   settings: byId("settings-button"),
   settingsDialog: byId("settings-dialog"),
-  duration: byId("duration-select"),
-  gap: byId("gap-select"),
-  voice: byId("voice-select"),
+  duration: byId("duration-slider"),
+  durationOutput: byId("duration-output"),
+  gap: byId("gap-slider"),
+  gapOutput: byId("gap-output"),
+  voiceOptions: byId("voice-options"),
   fade: byId("fade-toggle"),
   volume: byId("volume-slider"),
   volumeOutput: byId("volume-output"),
@@ -68,50 +70,49 @@ function announce(message = "") {
   ui.message.hidden = !message;
 }
 
-function fillSelect(select, options) {
-  select.replaceChildren(...options.map(({ value, label }) => new Option(label, value)));
+function fillChoices(container, name, choices) {
+  container.replaceChildren(
+    ...choices.map((choice) => {
+      const label = document.createElement("label");
+      label.className = "segment-option";
+      const input = document.createElement("input");
+      input.type = "radio";
+      input.name = name;
+      input.value = choice.id;
+      const text = document.createElement("span");
+      text.textContent = choice.name;
+      label.append(input, text);
+      return label;
+    }),
+  );
 }
 
-fillSelect(
-  ui.duration,
-  MINUTES.map((value) => ({ value, label: value + " minutes" })),
-);
-fillSelect(
-  ui.gap,
-  GAPS.map((value) => ({ value, label: value + " seconds" })),
-);
-fillSelect(
-  ui.voice,
-  catalog.voices.map((voice) => ({ value: voice.id, label: voice.name })),
-);
-ui.backgroundOptions.replaceChildren(
-  ...BACKGROUNDS.map((sound) => {
-    const label = document.createElement("label");
-    label.className = "background-option";
-    const input = document.createElement("input");
-    input.type = "radio";
-    input.name = "background";
-    input.value = sound.id;
-    const text = document.createElement("span");
-    text.textContent = sound.name;
-    label.append(input, text);
-    return label;
-  }),
-);
+function syncChoices(container, value) {
+  container.querySelectorAll("input").forEach((input, index) => {
+    input.checked = input.value === value;
+    if (input.checked) container.dataset.selected = String(index);
+  });
+}
+
+function syncTimeSlider(slider, output, steps, value, unit) {
+  slider.max = String(steps.length - 1);
+  slider.value = String(steps.indexOf(value));
+  slider.setAttribute("aria-valuetext", value + " " + unit);
+  output.value = String(value);
+}
+
+fillChoices(ui.voiceOptions, "voice", catalog.voices);
+fillChoices(ui.backgroundOptions, "background", BACKGROUNDS);
 
 function syncSettings() {
-  ui.duration.value = String(settings.minutes);
-  ui.gap.value = String(settings.gap);
-  ui.voice.value = settings.voice;
+  syncTimeSlider(ui.duration, ui.durationOutput, MINUTES, settings.minutes, "minutes");
+  syncTimeSlider(ui.gap, ui.gapOutput, GAPS, settings.gap, "seconds");
+  syncChoices(ui.voiceOptions, settings.voice);
   ui.fade.checked = settings.fade;
   ui.volume.value = String(settings.volume);
   ui.volumeOutput.value = settings.volume + "%";
-  for (const input of ui.backgroundOptions.querySelectorAll("input")) {
-    input.checked = input.value === settings.background;
-  }
-  ui.backgroundOptions.dataset.selected = String(
-    BACKGROUNDS.findIndex((sound) => sound.id === settings.background),
-  );
+  ui.volume.setAttribute("aria-valuetext", settings.volume + " percent");
+  syncChoices(ui.backgroundOptions, settings.background);
   ui.backgroundVolume.value = String(settings.backgroundVolume);
   ui.backgroundVolumeOutput.value = settings.backgroundVolume + "%";
   ui.backgroundVolumeRow.classList.toggle("is-off", settings.background === "off");
@@ -123,9 +124,9 @@ function syncSettings() {
 
 function readSettings() {
   settings = normalizeSettings({
-    minutes: ui.duration.value,
-    gap: ui.gap.value,
-    voice: ui.voice.value,
+    minutes: MINUTES[Number(ui.duration.value)],
+    gap: GAPS[Number(ui.gap.value)],
+    voice: ui.voiceOptions.querySelector("input:checked")?.value || settings.voice,
     fade: ui.fade.checked,
     volume: ui.volume.value,
     background: ui.backgroundOptions.querySelector("input:checked")?.value || "off",
@@ -243,11 +244,10 @@ for (const dialog of document.querySelectorAll("dialog")) {
     if (event.target === dialog && outside) dialog.close();
   });
 }
-for (const input of [ui.duration, ui.gap, ui.voice, ui.fade])
+for (const input of [ui.voiceOptions, ui.fade, ui.backgroundOptions])
   input.addEventListener("change", readSettings);
-ui.backgroundOptions.addEventListener("change", readSettings);
-ui.volume.addEventListener("input", readSettings);
-ui.backgroundVolume.addEventListener("input", readSettings);
+for (const input of [ui.duration, ui.gap, ui.volume, ui.backgroundVolume])
+  input.addEventListener("input", readSettings);
 ui.settingsDialog.addEventListener("close", readSettings);
 ui.reset.addEventListener("click", () => {
   settings = resetSettings();

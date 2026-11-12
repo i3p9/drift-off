@@ -31,8 +31,8 @@
           <button
             class="icon-button"
             id="settings-button"
-            aria-label="Session settings"
-            title="Session settings"
+            aria-label="Settings"
+            title="Settings"
             type="button"
           >
             <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -59,7 +59,7 @@
           </button>
           <fieldset class="background-picker">
             <legend>Background sound</legend>
-            <div class="background-options" id="background-options"></div>
+            <div class="segmented-control background-options" id="background-options"></div>
             <div class="background-volume is-off" id="background-volume-row">
               <label for="background-volume">Sound volume</label>
               <div class="volume-control">
@@ -133,59 +133,83 @@
       </footer>
     </div>
 
-    <dialog id="settings-dialog" aria-labelledby="settings-title">
-      <div class="dialog-header">
-        <div>
-          <p class="eyebrow">Make yourself comfortable</p>
-          <h2 id="settings-title">Your evening, your pace.</h2>
-        </div>
-        <button
-          class="icon-button close-dialog"
-          data-close="settings-dialog"
-          aria-label="Close settings"
-          type="button"
-        >
-          ×
+    <dialog class="settings-dialog" id="settings-dialog" aria-labelledby="settings-title">
+      <header class="settings-header">
+        <h2 id="settings-title">Settings</h2>
+        <button class="settings-done" data-close="settings-dialog" type="button" autofocus>
+          Done
         </button>
+      </header>
+      <div class="settings-content">
+        <section class="settings-group" aria-labelledby="session-settings-title">
+          <h3 id="session-settings-title">Session</h3>
+          <div class="settings-card">
+            <div class="settings-slider">
+              <div class="settings-control-header">
+                <label for="duration-slider">Duration</label>
+                <span class="settings-value"
+                  ><output id="duration-output" for="duration-slider">7</output> min</span
+                >
+              </div>
+              <input
+                id="duration-slider"
+                type="range"
+                min="0"
+                max="6"
+                step="1"
+                value="2"
+                aria-valuetext="7 minutes"
+              />
+              <div class="range-scale" aria-hidden="true">
+                <span>3 min</span><span>30 min</span>
+              </div>
+            </div>
+            <div class="settings-slider">
+              <div class="settings-control-header">
+                <label for="gap-slider">Pauses</label>
+                <span class="settings-value"
+                  ><output id="gap-output" for="gap-slider">14</output> sec</span
+                >
+              </div>
+              <input
+                id="gap-slider"
+                type="range"
+                min="0"
+                max="5"
+                step="1"
+                value="3"
+                aria-valuetext="14 seconds"
+              />
+              <div class="range-scale" aria-hidden="true">
+                <span>8 sec</span><span>22 sec</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="settings-group" aria-labelledby="voice-settings-title">
+          <h3 id="voice-settings-title">Voice</h3>
+          <div class="settings-card">
+            <fieldset class="settings-voice">
+              <legend class="sr-only">Narrator</legend>
+              <div class="segmented-control voice-options" id="voice-options"></div>
+            </fieldset>
+            <div class="settings-slider">
+              <div class="settings-control-header">
+                <label for="volume-slider">Volume</label>
+                <output class="settings-value" id="volume-output" for="volume-slider">65%</output>
+              </div>
+              <input id="volume-slider" type="range" min="0" max="100" step="1" value="65" />
+            </div>
+            <label class="settings-toggle" for="fade-toggle">
+              <span>Gradual fade</span>
+              <span class="switch">
+                <input id="fade-toggle" type="checkbox" role="switch" checked />
+                <span class="switch-track" aria-hidden="true"></span>
+              </span>
+            </label>
+          </div>
+        </section>
       </div>
-      <div class="settings-row">
-        <label for="duration-select">Session length<span>Ends gently, without a sound.</span></label
-        ><select id="duration-select" aria-label="Session length"></select>
-      </div>
-      <div class="settings-row">
-        <label for="gap-select"
-          >Space between scenes<span>A quiet moment to picture it.</span></label
-        ><select id="gap-select" aria-label="Space between scenes"></select>
-      </div>
-      <div class="settings-row">
-        <label for="voice-select">Voice<span>Choose what feels restful.</span></label
-        ><select id="voice-select" aria-label="Narration voice"></select>
-      </div>
-      <div class="settings-row">
-        <label for="fade-toggle"
-          >Gradually soften the voice<span>A little quieter as you settle in.</span></label
-        ><label class="switch"
-          ><input
-            id="fade-toggle"
-            type="checkbox"
-            checked
-            aria-label="Gradually soften the voice" /><span class="switch-track"></span
-        ></label>
-      </div>
-      <div class="settings-row volume-row">
-        <label for="volume-slider"
-          >Voice volume<span>Keep your device volume comfortable.</span></label
-        >
-        <div class="volume-control">
-          <input id="volume-slider" type="range" min="0" max="100" step="1" value="65" /><output
-            id="volume-output"
-            for="volume-slider"
-            >65%</output
-          >
-        </div>
-      </div>
-      <p class="settings-note">Only these preferences are saved in this browser.</p>
-      <button class="dialog-done" data-close="settings-dialog" type="button">Sounds good</button>
     </dialog>
 
     <dialog id="privacy-dialog" aria-labelledby="privacy-title">
