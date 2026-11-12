@@ -1,6 +1,9 @@
 import { normalizeSettings } from "../settings.js";
+import { backgroundEnvelope } from "./background.js";
 
 export const SAMPLE_RATE = 22050;
+// Keep background sound gentle across the slider's full range.
+const BACKGROUND_GAIN = 0.5;
 
 export function shuffle(items, random = Math.random) {
   const result = [...items];
@@ -73,18 +76,38 @@ export function wavHeader(frames, sampleRate = SAMPLE_RATE) {
   return bytes;
 }
 
-export function pcmForScene(samples, item, plan) {
+export function pcmForScene(samples, item, plan, background = null) {
   const bytes = new Uint8Array(item.frames * 2);
   const view = new DataView(bytes.buffer);
   const edgeFrames = Math.round(plan.sampleRate * 0.008);
   // iOS controls media-element volume through the device. Bake our setting
   // into the track so the app's volume slider also works on iPhones.
   const volume = (plan.settings.volume ?? 100) / 100;
+  const backgroundLevel =
+    background?.length && plan.settings.background !== "off"
+      ? (plan.settings.backgroundVolume ?? 0) / 100
+      : 0;
+  // Reserve mix headroom instead of clipping when voice and background peaks meet.
+  const headroom = 1 / (1 + backgroundLevel);
   for (let index = 0; index < item.frames; index++) {
-    const sample = samples[index] || 0;
-    const gain = gainAt((item.startFrame + index) / plan.frames, plan.settings.fade);
-    const edge = Math.min(1, index / edgeFrames, (item.frames - 1 - index) / edgeFrames);
-    const value = Math.max(-1, Math.min(1, sample * gain * edge * volume));
+    const frame = item.startFrame + index;
+    const sessionGain = gainAt(frame / plan.frames, plan.settings.fade);
+    let voice = 0;
+    if (samples) {
+      const sample = Math.max(-1, Math.min(1, samples[index] || 0));
+      const edge = Math.min(1, index / edgeFrames, (item.frames - 1 - index) / edgeFrames);
+      voice = sample * sessionGain * edge * volume;
+    }
+    let sound = 0;
+    if (backgroundLevel) {
+      sound =
+        background[frame % background.length] *
+        backgroundLevel *
+        BACKGROUND_GAIN *
+        backgroundEnvelope(frame, plan.frames, plan.sampleRate) *
+        sessionGain;
+    }
+    const value = Math.max(-1, Math.min(1, (voice + sound) * headroom));
     view.setInt16(index * 2, Math.round(value * (value < 0 ? 32768 : 32767)), true);
   }
   return bytes;

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" aria-hidden="true" focusable="false"><rect width="128" height="128" rx="28" fill="#0c1012" />
+  <defs>
+    <path id="drift-orbit-outer" d="M116 64a52 18 0 1 1-104 0a52 18 0 1 1 104 0Z" />
+    <path id="drift-orbit-inner" d="M64 18a34 46 0 1 0 0 92a34 46 0 1 0 0-92Z" />
+    <radialGradient id="drift-surface" cx="30%" cy="26%" r="82%">
+      <stop offset="0" stop-color="#e4e3d0" />
+      <stop offset="0.38" stop-color="#c5ceba" />
+      <stop offset="0.73" stop-color="#809b89" />
+      <stop offset="1" stop-color="#334b45" />
+    </radialGradient>
+    <radialGradient id="drift-glow">
+      <stop offset="0" stop-color="#b7d2ae" stop-opacity="0.18" />
+      <stop offset="1" stop-color="#b7d2ae" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <g class="planet-art">
+    <circle class="planet-halo" cx="64" cy="64" r="57" fill="url(#drift-glow)" />
+    <g class="planet-orbit planet-orbit-outer" transform="rotate(-24 64 64)">
+      <use class="planet-ring" href="#drift-orbit-outer" fill="none" stroke="#91ae91" stroke-width="3.5" />
+      <g class="planet-satellite" transform="translate(116 64)">
+        <circle cx="0" cy="0" r="2.6" fill="#d6dfc9" />
+      </g>
+    </g>
+    <g class="planet-orbit planet-orbit-inner" transform="rotate(34 64 64)">
+      <use class="planet-ring" href="#drift-orbit-inner" fill="none" stroke="#648775" stroke-width="2.5" />
+      <g class="planet-satellite" transform="translate(64 18)">
+        <circle cx="0" cy="0" r="2" fill="#a8c4a1" />
+      </g>
+    </g>
+    <g class="planet-surface">
+      <circle cx="64" cy="64" r="24" fill="url(#drift-surface)" />
+      <path d="M49 51c8-7 19-7 27-2M45 65c11-6 25-5 37 1M52 79c8-3 14-2 20 0" fill="none" stroke="#e8ecdc" stroke-opacity="0.12" stroke-width="1.5" stroke-linecap="round" />
+    </g>
+    <g class="planet-stars" fill="#b7c9ad">
+      <circle cx="21" cy="25" r="1.4" />
+      <circle cx="110" cy="99" r="1.1" />
+    </g>
+  </g>
+</svg>

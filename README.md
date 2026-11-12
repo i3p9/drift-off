@@ -15,13 +15,15 @@ Open the local URL Vite prints. The app uses plain JavaScript modules and CSS. T
 
 Choose a session length, pauses, voice, and volume in Settings, then select **Begin winding down**. Sessions shuffle scenes without repeating until the collection has been used. They last 3–30 minutes, with 8–22-second pauses, an optional gradual fade, and a silent ending. Pause, resume, and dark-screen controls are included.
 
+Background sound is on the main page, directly below **Begin winding down**. Use the **Off / Soft rain / Pink noise / Brown noise** buttons and the separate volume slider, initially 10%. The slider stays in place and is dimmed and disabled when sound is Off, so switching sounds does not shift the layout. Choose the sound and level before starting; the session is prepared with those settings. Background sound follows gradual softening when enabled and always fades to silence over the final 15 seconds. Background audio has an additional 50% gain reduction across the slider range. The mix reserves headroom to avoid clipping. Saved volume choices remain as set; the 10% default applies to new or reset preferences.
+
 Each session is assembled in memory into one WAV track, including spoken scenes, pauses, volume, and fade. The native audio element plays that track, so moving to the next scene does not depend on background JavaScript timers. Audio Session and Media Session integrations provide playback focus and lock-screen controls where supported. Phone interruptions or closing the app can stop playback. Physical-device screen-lock behavior still needs the [mobile checks](docs/mobile-checklist.md).
 
 ## Install on a phone
 
 Use **Install app** in the footer. Supported Android browsers show an installation prompt. On iPhone or iPad, open the hosted site in Safari, use **Share → Add to Home Screen**, and enable **Open as Web App** if shown. See [Apple's instructions](https://support.apple.com/en-ie/guide/iphone/iphea86e5236/ios).
 
-The production app saves its shell and both voices for offline use, about 24 MB. Installation and offline saving require HTTPS, or localhost for development testing. Wait for the offline-ready message before disconnecting. Updates wait for the app to close so they do not interrupt a session. Start playback before locking the phone.
+The production app saves its shell, both voices, and all three background loops for offline use, about 29 MB. Installation and offline saving require HTTPS, or localhost for development testing. Wait for the offline-ready message before disconnecting. Updates wait for the app to close so they do not interrupt a session. Start playback before locking the phone.
 
 ## Build and check
 
@@ -52,9 +54,9 @@ The `.node-version` file selects Node.js 22. `wrangler.toml` serves `dist/` as s
 
 The player uses its own scripts, styles, artwork, and narration. It makes no analytics, speech-provider, or session-reporting requests. The production Content Security Policy permits only same-origin connections, including audio downloads and offline caching. It blocks third-party assets and connections.
 
-Only five preferences are saved in browser local storage: session duration, pause length, voice, fade, and volume. Drift saves no timestamps, session history, sleep measurements, or identifiers. **About → Reset saved preferences** clears those preferences.
+Only seven preferences are saved in browser local storage: session duration, pause length, voice, fade, voice volume, background sound, and background volume. Drift saves no timestamps, session history, sleep measurements, or identifiers. **About → Reset saved preferences** clears those preferences. Older preferences without a background choice start with sound off; the previous Low noise choice becomes Pink noise and keeps its saved level.
 
-The service worker caches app files and both voices; it stores no listening history. When hosted, Cloudflare receives ordinary page and asset requests. Restrict access separately if the hosted app should be private; keeping the GitHub repository private does not by itself restrict the hosted website.
+The service worker caches app files, both voices, and all three background sounds; it stores no listening history. Nightly playback never contacts Freesound or ElevenLabs. When hosted, Cloudflare receives ordinary page and asset requests. Restrict access separately if the hosted app should be private; keeping the GitHub repository private does not by itself restrict the hosted website.
 
 ## Bundled narration
 
@@ -70,6 +72,8 @@ The original paid MP3 recordings are also kept in [`narration/`](narration/READM
 ```text
 index.html             Page markup
 src/main.js            UI events and rendering
+src/brand.js           Shared planet artwork and reduced-motion feedback
+src/assets/planet.svg  Master drawing for the header, hero, and icons
 src/settings.js        Preference defaults, validation, and storage
 src/install.js         Installation and offline-ready feedback
 src/audio/             Session planning, composition, player, and OS controls
@@ -77,16 +81,30 @@ src/data/scenes.json   Prompt text, voices, and timing metadata
 src/styles.css         Layout, artwork, motion, and phone styles
 public/                Voice packs, icons, and hosting headers
 narration/             Original paid recordings and metadata
+sound-sources/         Saved rain source, license, and prepared-loop checksums
 tests/                 Timing, privacy, mobile volume, and playback checks
 vite.config.js         Standard build and PWA configuration
 wrangler.toml          Cloudflare static asset deployment
 docs/                  Phone test checklist and background-noise research
+scripts/               Optional icon regeneration from the master SVG
 ```
 
 ## Background sound
 
-Background noise is deferred to a second phase. Evidence varies by population, sound level, and exposure duration; it does not establish a benefit for Drift's brief scene-and-pause sessions. A future version could offer quiet, optional sound that fades with the session. See the [research notes](docs/background-noise.md).
+Background sound is optional and off by default. Soft rain uses a CC0 recording by myLoop; Pink noise and Brown noise are generated locally with FFmpeg's colored-noise source. All three are bundled as PCM loops in `public/audio/`. Their source, processing, and checksums are documented in [`sound-sources/`](sound-sources/README.md). To regenerate them, install FFmpeg locally and run `npm run sounds`. Ordinary builds use the saved files and need no FFmpeg or network access to a sound provider.
+
+Evidence varies by population, sound level, and exposure duration; it does not establish a benefit for Drift's brief scene-and-pause sessions. These are sound preferences, without a sleep-treatment claim. See the [research and design notes](docs/background-noise.md).
+
+## Artwork and icons
+
+The header and central illustration render the same `src/assets/planet.svg` drawing. The planet stays fixed at `(64, 64)`, and the rings stay fixed around it with a gentle glow. Only the small moons travel: each follows the same SVG path used to draw its ring. The larger illustration uses thinner rings. Motion pauses when the app is hidden or playback is paused, and the device's Reduce Motion setting disables it. About shows a note when that setting is active.
+
+Controls have light press feedback, the sound chooser has a sliding selection highlight, and views and dialogs enter with a short fade. These transitions also respect Reduce Motion.
+
+After editing the drawing, run `npm run icons` to regenerate the favicon and home-screen icons. The script uses Sharp only for SVG export. These generated files are committed, so ordinary builds still use `vite build` without an extra asset-generation step.
+
+Production updates wait for existing app windows to close. After deploying a visual change, close all Drift tabs and fully close the installed app before reopening it. Existing home-screen icons may need the app to be added to the home screen again to refresh the operating system's cached icon.
 
 ## Verification
 
-Automated checks cover session timing, silence gaps, complete clips, shuffle, fade, WAV encoding, volume, source privacy, native playback controls, cancellation, and autoplay recovery. The production build includes both voice packs in the offline precache. Browser and physical-phone testing remain manual for this migration, at the owner's request.
+Automated checks cover session timing, quiet gaps when background sound is off, complete clips, shuffle, fade, WAV encoding, voice/background volume, mix headroom, loop continuity, pink/brown frequency rolloff, source privacy, native playback controls, cancellation, and autoplay recovery. The production build includes both voice packs and all three sound loops in the offline precache. Browser and physical-phone testing remain manual, at the owner's request.

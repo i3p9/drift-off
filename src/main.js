@@ -11,6 +11,10 @@ import {
 import { formatTime } from "./audio/session.js";
 import { createPlayer } from "./audio/player.js";
 import { initializeInstall } from "./install.js";
+import { initializeBrand, syncArtworkMotion } from "./brand.js";
+import { BACKGROUNDS } from "./data/backgrounds.js";
+
+initializeBrand();
 
 const byId = (id) => document.getElementById(id);
 const ui = {
@@ -39,6 +43,10 @@ const ui = {
   fade: byId("fade-toggle"),
   volume: byId("volume-slider"),
   volumeOutput: byId("volume-output"),
+  backgroundOptions: byId("background-options"),
+  backgroundVolume: byId("background-volume"),
+  backgroundVolumeOutput: byId("background-volume-output"),
+  backgroundVolumeRow: byId("background-volume-row"),
   about: byId("privacy-button"),
   aboutDialog: byId("privacy-dialog"),
   reset: byId("reset-settings"),
@@ -76,6 +84,20 @@ fillSelect(
   ui.voice,
   catalog.voices.map((voice) => ({ value: voice.id, label: voice.name })),
 );
+ui.backgroundOptions.replaceChildren(
+  ...BACKGROUNDS.map((sound) => {
+    const label = document.createElement("label");
+    label.className = "background-option";
+    const input = document.createElement("input");
+    input.type = "radio";
+    input.name = "background";
+    input.value = sound.id;
+    const text = document.createElement("span");
+    text.textContent = sound.name;
+    label.append(input, text);
+    return label;
+  }),
+);
 
 function syncSettings() {
   ui.duration.value = String(settings.minutes);
@@ -84,6 +106,16 @@ function syncSettings() {
   ui.fade.checked = settings.fade;
   ui.volume.value = String(settings.volume);
   ui.volumeOutput.value = settings.volume + "%";
+  for (const input of ui.backgroundOptions.querySelectorAll("input")) {
+    input.checked = input.value === settings.background;
+  }
+  ui.backgroundOptions.dataset.selected = String(
+    BACKGROUNDS.findIndex((sound) => sound.id === settings.background),
+  );
+  ui.backgroundVolume.value = String(settings.backgroundVolume);
+  ui.backgroundVolumeOutput.value = settings.backgroundVolume + "%";
+  ui.backgroundVolumeRow.classList.toggle("is-off", settings.background === "off");
+  ui.backgroundVolume.disabled = settings.background === "off";
   const voice = catalog.voices.find((voice) => voice.id === settings.voice);
   ui.summary.textContent =
     settings.minutes + " minutes · " + settings.gap + "-second pauses · " + voice.name;
@@ -96,6 +128,8 @@ function readSettings() {
     voice: ui.voice.value,
     fade: ui.fade.checked,
     volume: ui.volume.value,
+    background: ui.backgroundOptions.querySelector("input:checked")?.value || "off",
+    backgroundVolume: ui.backgroundVolume.value,
   });
   saveSettings(settings);
   syncSettings();
@@ -126,6 +160,7 @@ function renderState(state, plan) {
   ui.darken.hidden = !["playing", "paused"].includes(state);
   document.body.classList.toggle("is-active", active);
   document.body.classList.toggle("is-paused", state === "paused");
+  syncArtworkMotion();
 
   if (state === "preparing") {
     announce();
@@ -210,7 +245,9 @@ for (const dialog of document.querySelectorAll("dialog")) {
 }
 for (const input of [ui.duration, ui.gap, ui.voice, ui.fade])
   input.addEventListener("change", readSettings);
+ui.backgroundOptions.addEventListener("change", readSettings);
 ui.volume.addEventListener("input", readSettings);
+ui.backgroundVolume.addEventListener("input", readSettings);
 ui.settingsDialog.addEventListener("close", readSettings);
 ui.reset.addEventListener("click", () => {
   settings = resetSettings();
@@ -236,11 +273,6 @@ document.addEventListener("keydown", (event) => {
   event.preventDefault();
   if (["idle", "finished"].includes(player.state)) player.start(settings);
   else player.togglePause();
-});
-
-// Stop decorative motion in the background without touching audio playback.
-document.addEventListener("visibilitychange", () => {
-  document.body.classList.toggle("is-hidden", document.hidden);
 });
 
 byId("scene-count").textContent = catalog.scenes.length + " original scenes. Two voices.";

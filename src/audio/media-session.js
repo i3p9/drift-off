@@ -31,7 +31,7 @@ export function createMediaControls({ play, pause, stop, seek }) {
           title: "Time to drift",
           artist: voice,
           album: "Drift · bedtime scenes",
-          artwork: [{ src: "/icons/icon-512.png", sizes: "512x512", type: "image/png" }],
+          artwork: [{ src: "/icons/planet-512.png", sizes: "512x512", type: "image/png" }],
         });
       }
       media.playbackState = state === "playing" ? "playing" : "paused";

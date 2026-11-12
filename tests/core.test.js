@@ -153,15 +153,9 @@ test("catalog voice IDs cannot become external URLs or parent-directory paths", 
 test("runtime requests are restricted to this app and preferences contain no history", () => {
   const html = fs.readFileSync(path.join(root, "index.html"), "utf8");
   const headers = fs.readFileSync(path.join(root, "public/_headers"), "utf8");
-  const files = [
-    "src/main.js",
-    "src/settings.js",
-    "src/install.js",
-    "src/audio/compose.js",
-    "src/audio/player.js",
-    "src/audio/media-session.js",
-  ];
-  const scripts = files.map((file) => fs.readFileSync(path.join(root, file), "utf8")).join("\n");
+  const source = path.join(root, "src");
+  const files = fs.readdirSync(source, { recursive: true }).filter((file) => file.endsWith(".js"));
+  const scripts = files.map((file) => fs.readFileSync(path.join(source, file), "utf8")).join("\n");
   assert.match(headers, /connect-src 'self'/);
   assert.match(headers, /worker-src 'self'/);
   assert.doesNotMatch(headers, /unsafe-inline|unsafe-eval|https?:/);
@@ -173,6 +167,8 @@ test("runtime requests are restricted to this app and preferences contain no his
   assert.equal((scripts.match(/localStorage\.setItem\(/g) || []).length, 1);
   assert.equal(voiceUrl(catalog.voices[0].id), "/voices/" + catalog.voices[0].id + ".json");
   assert.deepEqual(Object.keys(core.normalizeSettings({})).sort(), [
+    "background",
+    "backgroundVolume",
     "fade",
     "gap",
     "minutes",

@@ -19,7 +19,7 @@ export function initializeInstall() {
   }
 
   function offlineReady() {
-    setStatus("Saved for offline use. Both voices are ready.", true);
+    setStatus("Saved for offline use. Both voices and background sounds are ready.", true);
   }
 
   window.addEventListener("beforeinstallprompt", (event) => {

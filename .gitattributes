@@ -1,4 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 *.mp3 binary
+*.wav binary
 public/voices/*.json -diff linguist-generated=true

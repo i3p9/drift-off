@@ -1,0 +1,38 @@
+{
+  "rain": {
+    "title": "Rain in Munich Westpark",
+    "creator": "myLoop",
+    "sourceUrl": "https://freesound.org/people/myLoop/sounds/849800/",
+    "downloadUrl": "https://cdn.freesound.org/previews/849/849800_18387771-hq.mp3",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "sourceFile": "sound-sources/rain-in-munich-westpark.mp3",
+    "sourceFormat": "Public high-quality MP3 preview",
+    "sha256": "da315ad8b56e99488e84b0fd4d9eac8f511b51229722c7f2bafcaec05f127cef",
+    "preparation": "First five seconds skipped; 60 seconds resampled to 22050 Hz mono, filtered, crossfaded, and normalized."
+  },
+  "noise": {
+    "source": "Generated locally with FFmpeg anoisesrc in scripts/prepare-sounds.mjs",
+    "documentationUrl": "https://ffmpeg.org/ffmpeg-filters.html#anoisesrc",
+    "colors": ["pink", "brown"],
+    "seed": "0x64726966",
+    "preparation": "22050 Hz mono, 20 Hz high-pass to reduce sub-bass rumble, two-second crossfade, DC removal, and normalization. No third-party recording."
+  },
+  "outputs": [
+    {
+      "file": "public/audio/soft-rain.wav",
+      "seconds": 58,
+      "sha256": "559fdb75bfdb5b62812112d8175e502fc38a41ed57701c4926398ec4a3bb3c96"
+    },
+    {
+      "file": "public/audio/pink-noise.wav",
+      "seconds": 22,
+      "sha256": "0a1e401236299a8608ce64e7a5ec221c538096f56c3c86f9c81c60de4dd0085f"
+    },
+    {
+      "file": "public/audio/brown-noise.wav",
+      "seconds": 22,
+      "sha256": "2dddcaad02ef422ef52c7f44856308ef0fd2953006e7750c428c1e8d5b1ffe4b"
+    }
+  ]
+}

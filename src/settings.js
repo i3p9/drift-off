@@ -1,4 +1,5 @@
 import catalog from "./data/scenes.json" with { type: "json" };
+import { BACKGROUNDS } from "./data/backgrounds.js";
 
 export const MINUTES = [3, 5, 7, 10, 15, 20, 30];
 export const GAPS = [8, 10, 12, 14, 18, 22];
@@ -9,23 +10,34 @@ export const DEFAULTS = {
   fade: true,
   voice: VOICES[0],
   volume: 65,
+  background: "off",
+  backgroundVolume: 10,
 };
 
 const STORAGE_KEY = "drift.preferences.v1";
 
+function normalizeVolume(value, fallback) {
+  const valid =
+    (typeof value === "number" || (typeof value === "string" && value.trim() !== "")) &&
+    Number.isFinite(Number(value));
+  return valid ? Math.max(0, Math.min(100, Number(value))) : fallback;
+}
+
 export function normalizeSettings(input = {}) {
   if (!input || typeof input !== "object") input = {};
-  const hasVolume =
-    (typeof input.volume === "number" ||
-      (typeof input.volume === "string" && input.volume.trim() !== "")) &&
-    Number.isFinite(Number(input.volume));
+  // Pink noise replaces the original Low noise choice.
+  const background = input.background === "noise" ? "pink" : input.background;
 
   return {
     minutes: MINUTES.includes(Number(input.minutes)) ? Number(input.minutes) : DEFAULTS.minutes,
     gap: GAPS.includes(Number(input.gap)) ? Number(input.gap) : DEFAULTS.gap,
     fade: typeof input.fade === "boolean" ? input.fade : DEFAULTS.fade,
     voice: VOICES.includes(input.voice) ? input.voice : DEFAULTS.voice,
-    volume: hasVolume ? Math.max(0, Math.min(100, Number(input.volume))) : DEFAULTS.volume,
+    volume: normalizeVolume(input.volume, DEFAULTS.volume),
+    background: BACKGROUNDS.some((sound) => sound.id === background)
+      ? background
+      : DEFAULTS.background,
+    backgroundVolume: normalizeVolume(input.backgroundVolume, DEFAULTS.backgroundVolume),
   };
 }
 
